@@ -1,0 +1,64 @@
+.features {
+  background-color: $white;
+  padding: 40px 20px 280px;
+  background-image: url("/img/grey-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.features__heading {
+  margin: 0 0 30px;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.features__list {
+  margin: 112px 0 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.features__item-heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 11px;
+}
+
+.features__item-description {
+  font-size: 14px;
+  padding: 0;
+  margin: 0 0 33px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.features__image--one,
+.features__image--two {
+  display: none;
+}
+
+.features__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.features__image--three {
+  position: absolute;
+  bottom: -360px;
+  left: 62px;
+  z-index: 0;
+}
+
+.features__image--screen-three {
+  position: absolute;
+  bottom: -320px;
+  left: 73px;
+  z-index: 0;
+}
