@@ -1,0 +1,29 @@
+.contacts {
+  background-color: $white;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.contacts__heading {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+.contacts__description {
+  font-size: 18px;
+  line-height: auto;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.contacts__type {
+  display: block;
+  font-size: 24px;
+  line-height: auto;
+  padding: 0 20px;
+  margin: 0 0 30px;
+  font-weight: 300;
+  color: $pink;
+}

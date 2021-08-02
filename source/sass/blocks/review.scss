@@ -1,6 +1,32 @@
 .review {
+  position: relative;
   z-index: 2;
   background-color: $white;
+  padding: 50px 20px 20px;
+  margin: 0;
+}
+
+.review__quote {
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.review__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  display: block;
+}
+
+.review__author-info {
+  display: none;
+}
+
+.review__description {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
 }

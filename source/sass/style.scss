@@ -9,6 +9,11 @@
 @import "blocks/button.scss";
 @import "blocks/features.scss";
 @import "blocks/review.scss";
+@import "blocks/circle-slider.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
 
 img {
   max-width: 100%;
@@ -28,3 +33,6 @@ img {
   overflow: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
