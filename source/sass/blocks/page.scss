@@ -4,12 +4,13 @@
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 24px;
   background-color: $pink;
+  color: $dark;
 }
 
 .page__body {
   margin: 0 auto;
+  width: 320px;
   background-image: url("/img/back-mobile.png");
   background-repeat: no-repeat;
-  width: $mobile-width;
   background-color: $maindarkblue;
 }

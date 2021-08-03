@@ -1,6 +1,5 @@
 @import "normalize.scss";
 @import "colors.scss";
-@import "width.scss";
 @import "fonts.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
@@ -14,6 +13,9 @@
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
+@import "blocks/form/typical-text.scss";
+@import "blocks/form/story.scss";
+@import "blocks/form/form.scss";
 
 img {
   max-width: 100%;
@@ -35,4 +37,9 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+::placeholder {
+  color: $dark;
+  opacity: 1;
 }
