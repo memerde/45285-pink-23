@@ -1,8 +1,6 @@
 .page {
   height: 100%;
-  font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
-  line-height: 24px;
   background-color: $pink;
   color: $dark;
 }
@@ -13,4 +11,12 @@
   background-image: url("/img/back-mobile.png");
   background-repeat: no-repeat;
   background-color: $maindarkblue;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  @media (min-width: 2560px) {
+    width: 2560px;
+  }
 }

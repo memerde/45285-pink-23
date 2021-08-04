@@ -13,9 +13,14 @@
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
-@import "blocks/form/typical-text.scss";
+@import "blocks/typical-text.scss";
 @import "blocks/form/story.scss";
 @import "blocks/form/form.scss";
+@import "blocks/catalog/photo.scss";
+@import "blocks/catalog/post.scss";
+@import "blocks/catalog/post-of-the-day.scss";
+@import "blocks/catalog/upload.scss";
+@import "blocks/catalog/editor.scss";
 
 img {
   max-width: 100%;
