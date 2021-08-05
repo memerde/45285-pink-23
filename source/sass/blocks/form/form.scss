@@ -126,3 +126,27 @@
     color: $pink;
   }
 }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+
+.form__item,
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
