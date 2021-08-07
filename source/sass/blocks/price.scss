@@ -1,8 +1,13 @@
 .price {
-  background-color: $grey;
-  padding: 0 0 40px;
+  background-color: $white;
+  padding: 125px 0 45px;
   margin: 0;
+  background-image: url("/img/grey-background2.png");
+  background-repeat: no-repeat;
+  min-height: 457px;
+  position: relative;
 }
+
 
 .price__table-slider {
   width: 100%;

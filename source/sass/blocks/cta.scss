@@ -1,7 +1,22 @@
 .cta {
   margin: 0;
-  padding: 23px 0 30px;
+  padding: 20px 0 31px;
   position: relative;
+
+  @media (min-width: 660px) {
+    padding: 100px 0 0;
+  }
+}
+
+.cta__block {
+  padding: 0 20px;
+  display: flex;
+  min-height: 613px;
+  flex-direction: column;
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
 }
 
 .cta__heading {
@@ -12,25 +27,32 @@
   font-size: 24px;
   line-height: 120%;
   color: $white;
+
+  @media (min-width: 660px) {
+    margin: 0 0 39px;
+    font-size: 40px;
+    padding: 0 40px;
+  }
 }
 
 .cta__img-top {
   position: absolute;
-  left: 103px;
-  top: 143px;
+  left: 104px;
+  top: 140px;
+
+  @media (min-width: 660px) {
+    left: 403px;
+  }
 }
 
 .cta__img-bottom {
   position: absolute;
   left: 0;
-  top: 110px;
-}
+  top: 107px;
 
-.cta__block {
-  padding: 0 20px;
-  display: flex;
-  height: 620px;
-  flex-direction: column;
+  @media (min-width: 660px) {
+    left: 403px;
+  }
 }
 
 .cta__button {
@@ -41,20 +63,16 @@
   display: flex;
   justify-content: space-between;
   padding: 0 38px 0;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
   align-items: center;
 }
 
-.cta__svg {
-  display: block;
+.cta__market--android {
+  padding: 1px 0 0;
+}
 
-  &--android {
-    padding-top: 5px;
-  }
-
-  &--ms {
-    padding-top: 11px;
-  }
+.cta__market--ms {
+  padding: 7px 0 0;
 }
 
 .cta__paragraph {
