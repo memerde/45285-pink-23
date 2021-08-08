@@ -46,11 +46,12 @@
   </header>
 
   <main>
-    <section class="typical-text">
-      <h2 class="typical-text__site-heading">Фотографии пользователей</h2>
-      <p class="typical-text__site-description">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как
-        не хватает ваших?
+    <section class="typical-text typical-text__catalog">
+      <h2 class="typical-text__site-heading typical-text__site-heading--catalog">Фотографии пользователей</h2>
+
+      <p class="typical-text__site-description typical-text__site-description--catalog">
+        Взгляните на фотографии, которые выкладывают пользователи!<br class="typical__br">
+        Видите, как не хватает ваших?
       </p>
     </section>
 
@@ -89,19 +90,19 @@
         <a href="#"><img src="img/photo-2-mobile.jpg" alt="Барабанная установка" width="280" height="180"></a>
 
         <div class="post__wrapper">
-        <h3 class="post__user">Антон</h3>
-        <span class="post__time">(12 часов назад)</span>
-        <p class="post__text">Соседи будут рады!</p>
-        <button type="button" class="post__hit">
-          Нравится: <span class="post__likes">666</span>
-        </button>
-      </div>
+          <h3 class="post__user">Антон</h3>
+          <span class="post__time">(12 часов назад)</span>
+          <p class="post__text">Соседи будут рады!</p>
+          <button type="button" class="post__hit">
+            Нравится: <span class="post__likes">666</span>
+          </button>
+        </div>
       </div>
 
       <div class="post">
 
-          <a href="#"><img src="img/photo-3-tablet.png" alt="Стеклянная крыша" width="280" height="180"></a>
-          <div class="post__wrapper">
+        <a href="#"><img src="img/photo-3-tablet.png" alt="Стеклянная крыша" width="280" height="180"></a>
+        <div class="post__wrapper">
           <h3 class="post__user">Борис</h3>
           <span class="post__time">(20 часов назад)</span>
           <p class="post__text">
@@ -113,8 +114,8 @@
 
       <div class="post">
 
-          <a href="#"><img src="img/photo-4-tablet.jpg" alt="Рынок" width="280" height="180"></a>
-          <div class="post__wrapper">
+        <a href="#"><img src="img/photo-4-tablet.jpg" alt="Рынок" width="280" height="180"></a>
+        <div class="post__wrapper">
           <h3 class="post__user">Сергей</h3>
           <span class="post__time">(25 часов назад)</span>
           <p class="post__text">Самая кубанская в мире!</p>
@@ -126,16 +127,17 @@
 
         <a href="#"><img src="img/photo-5-tablet.png" alt="В горах" width="280" height="180"></a>
         <div class="post__wrapper">
-        <h3 class="post__user">Максим</h3>
-        <span class="post__time">(40 часов назад)</span>
-        <p class="post__text">Где снег-то?</p>
-        <button type="button" class="post__hit">Нравится: <span class="post__likes">150</span>4</span></button>
+          <h3 class="post__user">Максим</h3>
+          <span class="post__time">(40 часов назад)</span>
+          <p class="post__text">Где снег-то?</p>
+          <button type="button" class="post__hit">Нравится: <span class="post__likes">150</span>4</span></button>
+        </div>
       </div>
-    </div>
 
       <div class="post">
 
-          <a href="#"><img src="img/photo-6-tablet.jpg" alt="Рынок" width="280" height="180"></a><div class="post__wrapper">
+        <a href="#"><img src="img/photo-6-tablet.jpg" alt="Рынок" width="280" height="180"></a>
+        <div class="post__wrapper">
           <h3 class="post__user">Надежда</h3>
           <span class="post__time">(45 часов назад)</span>
           <p class="post__text">Всем GM и взаимные лайки!</p>
@@ -150,7 +152,9 @@
       <p class="upload__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
       <div class="editor">
         <img src="img/photo-7-tablet.png" alt="Зимняя дорога" width="280" height="374">
-        <ul class="editor__list">
+
+
+        <ul class="editor__icon-list">
           <li class="editor__item editor__item--crop">
             <button type="button" class="editor__tool-button editor__tool-button--active editor__tool-button--crop">
               <svg class="editor__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
@@ -198,27 +202,33 @@
 
           </li>
         </ul>
-        <span class="visually-hidden">Кадрирование</span>
-        <div class="editor__range editor__range--crop">
-          <div class="editor__thumb"></div>
-          <div class="editor__track"></div>
-        </div>
-        <span class="visually-hidden">Заливка</span>
-        <div class="editor__range editor__range--fill">
-          <div class="editor__thumb"></div>
-          <div class="editor__track"></div>
-        </div>
-        <span class="visually-hidden">Контраст</span>
-            <div class="editor__range editor__range--contrast">
-              <div class="editor__thumb"></div>
-              <div class="editor__track"></div>
-            </div>
+        <ul class="editor__tools-list">
+
+
+          <li class="editor__range editor__range--crop">
+            <span class="visually-hidden">Кадрирование</span>
+            <div class="editor__thumb--crop"></div>
+            <div class="editor__track--crop"></div>
+          </li>
+
+          <li class="editor__range editor__range--fill">
+            <span class="visually-hidden">Заливка</span>
+            <div class="editor__thumb"></div>
+            <div class="editor__track"></div>
+          </li>
+
+          <li class="editor__range editor__range--contrast">
+            <span class="visually-hidden">Контраст</span>
+            <div class="editor__thumb"></div>
+            <div class="editor__track"></div>
+          </li>
+
+        </ul>
         <button type="button" class="editor__button editor__button--active button">Запостить</button>
         <button type="button" class="editor__button button">Отмена</button>
-      </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer__catalog">
     <img src="img/logo.svg" alt="Логотип «Пинк»" class="footer__logo" width="145" height="40">
     <ul class="footer__social social">
       <li class="social__item">
