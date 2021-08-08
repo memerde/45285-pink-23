@@ -45,7 +45,7 @@
     </nav>
   </header>
 
-  <main class="main main__form">
+  <main>
     <section class="typical-text typical-text__form">
       <h2 class="typical-text__site-heading typical-text__site-heading--form">Конкурс на самое безбашенное путешествие с
         Пинк</h2>
@@ -54,11 +54,9 @@
         миль на вашу бонусную карту! <span class="form__none">Пожалуйста, заполните форму ниже:</span>
       </p>
     </section>
-
     <section class="story">
       <h2 class="visually-hidden">Форма участника конкурса</h2>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
-
         <fieldset class="form__fieldset">
           <ul role="none" class="form__list">
             <li class="form__item">
@@ -82,7 +80,6 @@
           <legend class="form__legend">
             Ваши безбашенные достижения в путешествии
           </legend>
-
           <ul class="form__list form__list--check">
             <li class="form__item form__item--check">
               <label class="form__label-checkbox" for="point1">
@@ -96,21 +93,24 @@
                 Обгорел на пляже
               </label>
             </li>
+
             <li class="form__item form__item--check">
               <label class="form__label-checkbox" for="point3">
-                <input class="form__checkbox" type="checkbox" name="point-3" id="point2">
+                <input class="form__checkbox" type="checkbox" name="point-3" id="point3">
                 Видел Чака Норриса
               </label>
             </li>
+
             <li class="form__item form__item--check">
               <label class="form__label-checkbox" for="point4">
-                <input class="form__checkbox" type="checkbox" name="point-4" id="point5">
+                <input class="form__checkbox" type="checkbox" name="point-4" id="point4">
                 Накупил сувениров
               </label>
             </li>
+
             <li class="form__item form__item--check">
               <label class="form__label-checkbox" for="point5">
-                <input class="form__checkbox" type="checkbox" name="point-5" id="point3">
+                <input class="form__checkbox" type="checkbox" name="point-5" id="point5">
                 Удержал башню
               </label>
             </li>
@@ -121,6 +121,7 @@
                 Разгромил отель
               </label>
             </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--address">
@@ -166,9 +167,9 @@
                 <input class="form__radio" type="radio" name="user_os" id="radio_win" value="microsoft">
                 Windows Phone</label>
             </li>
-        </fieldset>
+            </ul>
 
-        </ul>
+        </fieldset>
 
         <div class="form__fieldset form__fieldset--emotions">
           <label class="form__legend form__legend--emotions" for="emotions">
