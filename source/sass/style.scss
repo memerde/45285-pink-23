@@ -1,21 +1,23 @@
 @import "normalize.scss";
+@import "global.scss";
 @import "colors.scss";
 @import "fonts.scss";
-@import "navigation.scss";
+@import "blocks/navigation.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
-@import "blocks/site-nav.scss";
-@import "blocks/cta.scss";
 @import "blocks/button.scss";
-@import "blocks/features.scss";
-@import "blocks/review.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/index/contacts.scss";
+@import "blocks/index/cta.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/price.scss";
+@import "blocks/index/review.scss";
+@import "blocks/index/table.scss";
 @import "blocks/circle-slider.scss";
-@import "blocks/price.scss";
-@import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/typical-text.scss";
-@import "blocks/table.scss";
 @import "blocks/form/story.scss";
 @import "blocks/form/form.scss";
 @import "blocks/catalog/photo.scss";
@@ -23,30 +25,3 @@
 @import "blocks/catalog/post-of-the-day.scss";
 @import "blocks/catalog/upload.scss";
 @import "blocks/catalog/editor.scss";
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-::placeholder {
-  color: $dark;
-  opacity: 1;
-}
