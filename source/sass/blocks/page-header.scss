@@ -1,0 +1,22 @@
+.page-header {
+  margin: 0;
+  background-color: $black-op3;
+  padding: 22px 20px 21px;
+  position: relative;
+
+  img {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 130px;
+  }
+}
+
+.page-header__open-menu {
+  background-color: $dark;
+  padding: 22px 20px 24px;
+}

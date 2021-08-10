@@ -1,0 +1,24 @@
+.social {
+  margin-bottom: 33px;
+}
+
+.social__item {
+  svg {
+    display: block;
+  }
+
+  a {
+    text-align: center;
+    border: 3px solid $blue-op;
+    width: 53px;
+    height: 53px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.social__link-youtube {
+  padding-left: 5px;
+}

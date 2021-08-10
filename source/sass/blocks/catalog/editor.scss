@@ -1,0 +1,78 @@
+.editor {
+  padding: 22px 20px 34px;
+  background-color: $grey;
+}
+
+.editor__icon-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 38px 35px 34px;
+  padding: 0;
+  align-items: center;
+}
+
+.editor__tool-button {
+  background-color: transparent;
+  border: none;
+}
+
+.editor__svg:hover g {
+  opacity: 1;
+}
+
+.editor__svg:hover path {
+  fill: $pink;
+}
+
+.editor__tools-list,
+.editpr__range {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.editor__tools-list {
+  margin-bottom: 75px;
+}
+
+.editor__range--crop {
+  position: relative;
+  padding: 0 20px;
+}
+
+.editor__track--crop {
+  width: 100%;
+  height: 2px;
+  background-color: $dark;
+  margin: 0 0 50px;
+}
+
+.editor__thumb--crop {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  left: 213px;
+  top: -5px;
+  border: 2px solid $pink;
+}
+
+.editor__range--fill,
+.editor__range--contrast {
+  display: none;
+}
+
+.editor__button {
+  color: $blue-op;
+  border: 3px solid $blue-op;
+  width: 100%;
+  margin: 0 0 10px;
+  background-color: transparent;
+}
+
+.editor__button--active {
+  color: $pink;
+  border: 3px solid $pink;
+}

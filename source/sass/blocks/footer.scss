@@ -1,0 +1,45 @@
+.footer {
+  background-color: $white;
+  text-align: center;
+  padding: 33px 20px 40px;
+
+  &__index {
+    padding-top: 38px;
+  }
+
+  &__catalog {
+    padding-top: 40px;
+  }
+
+  &__form {
+    padding-top: 58px;
+  }
+}
+
+.footer__logo {
+  margin: 0 0 37px;
+}
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__develop {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 73px;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+  }
+
+  svg {
+    display: block;
+  }
+}
