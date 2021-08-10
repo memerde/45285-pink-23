@@ -4,6 +4,11 @@
   padding: 22px 20px 21px;
   position: relative;
 
+  @media (min-width: 660px) {
+    padding: 25px 20px;
+    min-height: 110px;
+  }
+
   img {
     display: block;
   }
@@ -16,7 +21,9 @@
   }
 }
 
-.page-header__open-menu {
-  background-color: $dark;
-  padding: 22px 20px 24px;
-}
+
+// добавляется js-сом
+// .page-header__open-menu {
+//   background-color: $dark;
+//   padding: 22px 20px 24px;
+// }

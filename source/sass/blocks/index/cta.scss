@@ -4,7 +4,8 @@
   position: relative;
 
   @media (min-width: 660px) {
-    padding: 100px 0 0;
+    padding: 93px 20px 0;
+    min-height: 619px;
   }
 }
 
@@ -14,8 +15,13 @@
   min-height: 613px;
   flex-direction: column;
 
+
   @media (min-width: 660px) {
     width: 300px;
+    padding: 0;
+    margin: 0;
+    min-height: 411px;
+    justify-content: space-between;
   }
 }
 
@@ -29,7 +35,7 @@
   color: $white;
 
   @media (min-width: 660px) {
-    margin: 0 0 39px;
+    margin: 0 0 19px;
     font-size: 40px;
     padding: 0 40px;
   }
@@ -40,23 +46,34 @@
   left: 0;
   top: 107px;
 
-  @media (min-width: 660px) {
-    left: 403px;
+  &--mobile {
+    @media (min-width: 660px) {
+      display: none;
+    }
   }
-}
 
-.cta__img-bottom {
-  position: absolute;
-  left: 0;
-  top: 107px;
+  &--tablet {
+    @media (min-width: 0) {
+      display: none;
+    }
 
-  @media (min-width: 660px) {
-    left: 403px;
+    @media (min-width: 660px) {
+      display: block;
+      left: 0;
+      top: 74px;
+      z-index: 0;
+      position: absolute;
+    }
   }
 }
 
 .cta__button {
   margin-bottom: 32px;
+
+  @media (min-width: 660px) {
+    z-index: 2;
+    margin-bottom: 34px;
+  }
 }
 
 .cta__market-wrapper {
@@ -65,14 +82,35 @@
   padding: 0 38px 0;
   margin-bottom: 17px;
   align-items: center;
+
+  @media (min-width: 660px) {
+    justify-content: start;
+    padding: 0 46px 0;
+    z-index: 2;
+  }
+}
+
+.cta__market--apple {
+  padding: 1px 0 0;
+  @media (min-width: 660px) {
+    margin-right: 35px;
+    padding:0;
+  }
 }
 
 .cta__market--android {
   padding: 1px 0 0;
+  @media (min-width: 660px) {
+    margin-right: 35px;
+    padding:2px 0 0;
+  }
 }
 
 .cta__market--ms {
   padding: 7px 0 0;
+  @media (min-width: 660px) {
+    padding:2px 0 0;
+  }
 }
 
 .cta__paragraph {
@@ -83,4 +121,10 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 2;
+  }
 }
