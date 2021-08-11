@@ -6,12 +6,24 @@
   background-repeat: no-repeat;
   min-height: 457px;
   position: relative;
+
+  @media (min-width: 660px) {
+    padding: 109px 0 0;
+    margin: 0;
+    background-position: 0 0;
+    background-size: cover;
+    background-image: url("/img/grey-background-price-t.png");
+  }
 }
 
 
 .price__table-slider {
   width: 100%;
   overflow: hidden;
+
+  @media (min-width: 660px) {
+    overflow: visible;
+  }
 }
 
 .price__slider-dots {

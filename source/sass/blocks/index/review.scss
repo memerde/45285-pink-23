@@ -4,6 +4,12 @@
   background-color: $white;
   padding: 46px 20px 11px;
   margin: 0;
+
+  @media (min-width: 660px) {
+    margin: 0;
+    padding: 31px 0 0;
+  }
+
 }
 
 .review__quote {
@@ -14,6 +20,13 @@
   justify-content: space-between;
   flex-direction: column;
   min-height: 217px;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 0 2px;
+  }
 }
 
 .review__author-name {
@@ -22,10 +35,25 @@
   font-style: normal;
   text-align: center;
   display: block;
+
+  @media (min-width: 660px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 6px;
+    order: 1;
+  }
 }
 
 .review__author-info {
   display: none;
+
+  @media (min-width: 660px) {
+    text-align: center;
+    font-style: normal;
+    display: block;
+    order: 2;
+
+  }
 }
 
 .review__description {
@@ -34,4 +62,27 @@
   text-align: center;
   padding: 0;
   margin: 0;
+
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    line-height: 30px;
+    background-color: wheat;
+    order: 1;
+    margin-bottom: 35px;
+  }
+}
+
+.review__author {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: column; order:2;
+  }
+}
+
+
+.review__slider {
+  @media (min-width: 660px) {
+    margin: 0 187px;
+  }
 }
