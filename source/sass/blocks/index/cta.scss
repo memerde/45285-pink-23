@@ -2,6 +2,7 @@
   margin: 0;
   padding: 20px 0 31px;
   position: relative;
+  background-color: $dark;
 
   @media (min-width: 660px) {
     padding: 93px 20px 0;
@@ -92,24 +93,27 @@
 
 .cta__market--apple {
   padding: 1px 0 0;
+
   @media (min-width: 660px) {
     margin-right: 35px;
-    padding:0;
+    padding: 0;
   }
 }
 
 .cta__market--android {
   padding: 1px 0 0;
+
   @media (min-width: 660px) {
     margin-right: 35px;
-    padding:2px 0 0;
+    padding: 2px 0 0;
   }
 }
 
 .cta__market--ms {
   padding: 7px 0 0;
+
   @media (min-width: 660px) {
-    padding:2px 0 0;
+    padding: 2px 0 0;
   }
 }
 

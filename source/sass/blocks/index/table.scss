@@ -9,6 +9,7 @@
   @media (min-width: 660px) {
     width: 620px;
     translate: 20px;
+    margin: 0;
   }
 }
 
@@ -77,7 +78,7 @@
   font-size: 14px;
 
   @media (min-height: 660px) {
-    left: 8px;
+    left: 7px;
     top: 17px;
   }
 }
@@ -90,10 +91,12 @@
 
   @media (min-height: 660px) {
     content: url("/img/hit-ribbon-t.svg");
-    left: 0;
+    left: 0px;
+    top: -2px;
+
+
   }
 }
-
 // заголовки строк - розовый фильтр.. вот это вот всё..
 .table__rowheader {
   width: 153px;
@@ -134,23 +137,39 @@
   @media (min-width: 660px) {
     display: none;
   }
-
 }
 
-.table__mobile--filter {
+.table__pink--base {
+  display: none;
 
-  right: 295px;
-  top: 17px;
-  position: absolute;
-  display: block;
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    left: 217px;
+    top: 11px;
+  }
 }
 
-.table__smile--standart {
+.table__pink--standart {
+  display: none;
 
-  right: 295px;
-  top: 18px;
-  position: absolute;
-  display: block;
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    left: 373px;
+    top: 11px;
+  }
+}
+
+.table__pink--unlim {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    left: 527px;
+    top: 11px;
+  }
 }
 
 .table__smile--base {
@@ -158,8 +177,23 @@
 
   @media (min-width: 660px) {
     display: block;
-    left: 12px;
-    top: 0;
+    position: absolute;
+    left: 219px;
+    top: 8px;
+  }
+}
+
+.table__smile--standart {
+  right: 295px;
+  top: 18px;
+  position: absolute;
+  display: block;
+
+  @media (min-width: 660px) {
+    display: block;
+    left: 373px;
+    top: 11px;
+    position: absolute;
   }
 }
 
@@ -168,21 +202,37 @@
 
   @media (min-width: 660px) {
     display: block;
-    left: 12px;
-    top: 0;
+    right: 62px;
+    top: 11px;
+    position: absolute;
   }
 }
 
-.table__mobile--comments {
-
-  right: 297px;
-  top: 15px;
-  position: absolute;
-  display: block;
+.table__comment--base {
+  @media (min-height: 660px) {
+    position: absolute;
+    top: 8px;
+    left: 219px;
+  }
 }
 
+.table__comment--standart {
+  @media (min-height: 660px) {
+    position: absolute;
+    top: 8px;
+    left: 375px;
+  }
+}
 
-.table th {
+.table__comment--unlim {
+  @media (min-height: 660px) {
+    position: absolute;
+    top: 11px;
+    right: 62px;
+  }
+}
+
+.table .table__rowheader {
   border: 2px solid $grey;
 }
 
@@ -195,4 +245,17 @@
 
 .table .table__none {
   border-style: none;
+}
+
+.table__column:nth-child(2) {
+  border-top-left-radius: 3px;
+}
+
+.table__column:nth-child(3) {
+  border-left: 2px solid $grey;
+  border-right: 2px solid $grey;
+}
+
+.table__column:last-child {
+  border-top-right-radius: 3px;
 }

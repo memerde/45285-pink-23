@@ -7,7 +7,7 @@
 
   @media (min-width: 660px) {
     margin: 0;
-    padding: 31px 0 0;
+    padding: 31px 0 14px;
   }
 
 }
@@ -52,7 +52,6 @@
     font-style: normal;
     display: block;
     order: 2;
-
   }
 }
 
@@ -67,7 +66,6 @@
   @media (min-width: 660px) {
     font-size: 18px;
     line-height: 30px;
-    background-color: wheat;
     order: 1;
     margin-bottom: 35px;
   }
@@ -76,12 +74,17 @@
 .review__author {
   @media (min-width: 660px) {
     display: flex;
-    flex-direction: column; order:2;
+    flex-direction: column;
+    order: 2;
   }
 }
 
 
-.review__slider {
+.review__slider-dots {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 110px;
+  margin: 0 auto;
   @media (min-width: 660px) {
     margin: 0 187px;
   }

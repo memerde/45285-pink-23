@@ -3,6 +3,28 @@
   padding: 40px 0 0;
   margin: 0;
   text-align: center;
+
+  @media (min-width: 660px) {
+    padding: 45px 0 0;
+    position: relative;
+  }
+}
+
+.contacts::after {
+  @media (min-width: 660px) {
+    content: url("/img/triangle-t.png");
+    left: 0;
+    top: 350px;
+    display: block;
+    position: absolute;
+  }
+}
+
+.contacts__map {
+  @media (min-width: 660px) {
+    width: 660px;
+    height: 374px;
+  }
 }
 
 .contacts__heading {
@@ -11,6 +33,11 @@
   font-weight: 300;
   margin: 0 0 37px;
   padding: 0;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    line-height: 53px;
+  }
 }
 
 .contacts__item,
@@ -23,6 +50,25 @@
 
 .contacts__list {
   margin: 0 0 36px;
+
+  @media (min-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px 0 47px;
+  }
+}
+
+.contacts__item {
+  @media (min-width: 660px) {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts__item:last-child {
+  @media (min-width: 660px) {
+    margin: 0 auto;
+  }
 }
 
 .contacts__description {
@@ -55,15 +101,19 @@
   }
 }
 
-.contacts__item--decorative::after {
+// .contacts__item--decorative::after {
+//   display: block;
+//   content: url("/img/triangle.svg");
+//   bottom: -80px;
+//   z-index: -1;
+//   position: absolute;
+//   @media (min-width: 660px) {
+//     content: url("/img/triangle-t.png");
+//     left: 0;
+//     top: 200px;
+//   }
+// }
 
-  display: block;
-  content: url("/img/triangle.svg");
-  bottom: -80px;
-  z-index: -1;
-  position: absolute;
-}
-
-.contacts__map {
-  z-index: 1;
-}
+// .contacts__map {
+//   z-index: 1;
+// }
