@@ -16,6 +16,11 @@
     background-size: cover;
     background-image: url("/img/grey-background-t.png");
   }
+
+  @media (min-width: 1200px) {
+    padding: 62px 0 0;
+    background-position: 0 278px;
+  }
 }
 
 .features__slogan {
@@ -27,6 +32,47 @@
     grid-column: 1/-1;
   }
 }
+
+// заголовок секции
+.features__heading {
+  margin: 0 0 29px;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  list-style: none;
+
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    line-height: auto;
+    margin: 0 0 12px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 68px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  &--tablet {
+    @media (min-width: 660px) {
+      margin: 0 40px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 240px;
+      display: block;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+}
+
 
 // главный список
 .features__list {
@@ -42,6 +88,14 @@
     margin: 0;
     padding: 106px 0 0;
     position: relative;
+  }
+
+  @media (min-width: 1200px) {
+    grid-row: 3/-1;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    background-color: $pink;
   }
 }
 
@@ -80,6 +134,10 @@
 .features__image--one,
 .features__image--two {
   display: none;
+
+  @media (min-width:1200px) {
+    display: block;
+  }
 }
 
 .features__images {
@@ -88,6 +146,14 @@
   @media (min-width: 660px) {
     grid-row: 2/-1;
     grid-column: 1/2;
+  }
+
+  @media (min-width: 1200px) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -99,6 +165,13 @@
 
   @media (min-width: 660px) {
     display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -120,30 +193,8 @@
     left: 0;
     z-index: 0;
   }
-}
 
-// заголовок секции
-.features__heading {
-  margin: 0 0 29px;
-  padding: 0;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  list-style: none;
-
-
-  @media (min-width: 660px) {
-    font-size: 40px;
-    line-height: auto;
-    margin: 0 0 12px;
-  }
-
-  &--tablet {
-    @media (min-width: 660px) {
-      margin: 0 40px;
-      font-size: 40px;
-      line-height: 54px;
-    }
+  @media (min-width: 1200px) {
+    display: none;
   }
 }

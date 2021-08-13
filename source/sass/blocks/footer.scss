@@ -14,10 +14,22 @@
   &__form {
     padding-top: 58px;
   }
+
+  @media (min-width: 660px) {
+    display: flex;
+    padding: 40px 20px 37px;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 127px;
+  }
 }
 
 .footer__logo {
   margin: 0 0 37px;
+
+  @media (min-width: 660px) {
+    margin: 0;
+  }
 }
 
 .footer__social {
@@ -27,6 +39,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 660px) {
+    padding: 0;
+  }
 }
 
 .footer__develop {
@@ -37,9 +53,18 @@
 
   p {
     font-size: 14px;
+
+    @media (min-width: 660px) {
+      padding: 0 15px 0 0;
+    }
   }
 
   svg {
     display: block;
+  }
+
+  @media (min-width: 660px) {
+    margin: 0 0 0 7px;
+    padding: 5px 0 0;
   }
 }

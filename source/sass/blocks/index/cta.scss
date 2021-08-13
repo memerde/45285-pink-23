@@ -8,6 +8,11 @@
     padding: 93px 20px 0;
     min-height: 619px;
   }
+
+  @media (min-width: 1200px) {
+    padding: 100px 130px 0;
+    min-height: 743px;
+  }
 }
 
 .cta__block {
@@ -24,6 +29,14 @@
     min-height: 411px;
     justify-content: space-between;
   }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+    min-height: 411px;
+    justify-content: space-between;
+    width: 300px;
+  }
 }
 
 .cta__heading {
@@ -39,6 +52,13 @@
     margin: 0 0 19px;
     font-size: 40px;
     padding: 0 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 0 35px;
+    font-size: 50px;
+    line-height: 68px;
+    padding: 0;
   }
 }
 
@@ -65,6 +85,26 @@
       z-index: 0;
       position: absolute;
     }
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
+
+    @media (min-width: 1200px) {
+      display: block;
+      left: 146px;
+      top: 98px;
+      z-index: 0;
+      position: absolute;
+    }
   }
 }
 
@@ -74,6 +114,11 @@
   @media (min-width: 660px) {
     z-index: 2;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+    font-size: 21px;
   }
 }
 
@@ -88,6 +133,11 @@
     justify-content: start;
     padding: 0 46px 0;
     z-index: 2;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 47px 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -107,6 +157,11 @@
     margin-right: 35px;
     padding: 2px 0 0;
   }
+
+  @media (min-width: 1200px) {
+    margin-right: 35px;
+    padding: 6px 0 0;
+  }
 }
 
 .cta__market--ms {
@@ -114,6 +169,10 @@
 
   @media (min-width: 660px) {
     padding: 2px 0 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8px 1px 0;
   }
 }
 
