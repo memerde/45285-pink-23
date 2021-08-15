@@ -17,6 +17,13 @@
     min-height: 386px;
     clip-path: polygon(0 10.7%, 100% 0, 100% 100%, 0% 100%);
   }
+
+  @media (min-width: 1200px) {
+    min-height: 534px;
+    padding: 157px 0 0;
+    clip-path: polygon(0 18.7%, 100% 0, 100% 100%, 0% 100%);
+
+  }
 }
 
 .price__table-slider {

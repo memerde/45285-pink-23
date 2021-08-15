@@ -1,8 +1,9 @@
 .cta {
   margin: 0;
-  padding: 20px 0 31px;
+  padding: 23px 0 31px;
   position: relative;
   background-color: $dark;
+  min-height: 667px;
 
   @media (min-width: 660px) {
     padding: 93px 20px 0;
@@ -65,7 +66,7 @@
 .cta__img {
   position: absolute;
   left: 0;
-  top: 107px;
+  top: 110px;
 
   &--mobile {
     @media (min-width: 660px) {
@@ -109,7 +110,7 @@
 }
 
 .cta__button {
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 
   @media (min-width: 660px) {
     z-index: 2;
@@ -126,8 +127,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 38px 0;
-  margin-bottom: 17px;
-  align-items: center;
+  margin-bottom: 18px;
+  align-items: flex-start;
+  list-style: none;
 
   @media (min-width: 660px) {
     justify-content: start;
@@ -139,19 +141,23 @@
     padding: 0 47px 0;
     margin-bottom: 50px;
   }
+
+
 }
 
-.cta__market--apple {
-  padding: 1px 0 0;
+.cta__market {display:block;}
 
-  @media (min-width: 660px) {
-    margin-right: 35px;
-    padding: 0;
-  }
-}
+// .cta__market--apple {
+//   padding: 0;
+
+//   @media (min-width: 660px) {
+//     margin-right: 35px;
+//     padding: 0;
+//   }
+// }
 
 .cta__market--android {
-  padding: 1px 0 0;
+  margin-top: 6px;
 
   @media (min-width: 660px) {
     margin-right: 35px;
@@ -165,7 +171,7 @@
 }
 
 .cta__market--ms {
-  padding: 7px 0 0;
+  margin-top: 12px;
 
   @media (min-width: 660px) {
     padding: 2px 0 0;

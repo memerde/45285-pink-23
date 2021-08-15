@@ -11,9 +11,15 @@
     translate: 20px;
     margin: 0;
   }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    translate: 0;
+    margin: 0 auto;
+  }
 }
 
-// ширина трёх колонок
+// ширина трёх синих колонок
 .table__column {
   background: $dark;
   width: 276px;
@@ -24,6 +30,11 @@
   @media (min-width: 660px) {
     width: 155px;
     padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 236px;
+    padding: 4px 0 13px;
   }
 }
 
@@ -42,6 +53,13 @@
     font-size: 16px;
     line-height: 30px;
   }
+
+  @media (min-width: 1200px) {
+    padding: 12px 10px 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .table__subheader {
@@ -56,13 +74,19 @@
   @media (min-height: 660px) {
     padding-bottom: 7px;
   }
+
+  @media (min-height: 660px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .table__column--hit {
   position: relative;
   border: none;
   margin: 0;
-  padding: 0;
+
+
 }
 
 .table__column--hit::before {
@@ -97,6 +121,7 @@
 
   }
 }
+
 // заголовки строк - розовый фильтр.. вот это вот всё..
 .table__rowheader {
   width: 153px;
@@ -110,6 +135,12 @@
 
   @media (min-height: 660px) {
     height: 47px;
+  }
+
+  @media (min-height: 660px) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 0 15px 20px;
   }
 }
 
@@ -139,25 +170,38 @@
   }
 }
 
-.table__pink--base {
-  display: none;
-
-  @media (min-width: 660px) {
-    display: block;
-    position: absolute;
-    left: 217px;
-    top: 11px;
-  }
+td {
+text-align: center;
 }
+// .table__pink--base {
+//   display: none;
+
+//   @media (min-width: 660px) {
+//     display: block;
+//     position: absolute;
+//     left: 217px;
+//     top: 11px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     display: block;
+//     position: absolute;
+//     left: 337px;
+//     top: 20px;
+//   }
+// }
 
 .table__pink--standart {
-  display: none;
+
 
   @media (min-width: 660px) {
     display: block;
     position: absolute;
     left: 373px;
     top: 11px;
+  }
+  @media (min-width: 1200px) {
+
   }
 }
 
@@ -170,6 +214,9 @@
     left: 527px;
     top: 11px;
   }
+  @media (min-width: 1200px) {
+
+  }
 }
 
 .table__smile--base {
@@ -180,6 +227,9 @@
     position: absolute;
     left: 219px;
     top: 8px;
+  }
+  @media (min-width: 1200px) {
+
   }
 }
 
@@ -195,6 +245,9 @@
     top: 11px;
     position: absolute;
   }
+  @media (min-width: 1200px) {
+
+  }
 }
 
 .table__smile--unlim {
@@ -206,6 +259,9 @@
     top: 11px;
     position: absolute;
   }
+  @media (min-width: 1200px) {
+
+  }
 }
 
 .table__comment--base {
@@ -213,6 +269,9 @@
     position: absolute;
     top: 8px;
     left: 219px;
+  }
+  @media (min-width: 1200px) {
+
   }
 }
 
@@ -222,6 +281,9 @@
     top: 8px;
     left: 375px;
   }
+  @media (min-width: 1200px) {
+
+  }
 }
 
 .table__comment--unlim {
@@ -229,6 +291,9 @@
     position: absolute;
     top: 11px;
     right: 62px;
+  }
+  @media (min-width: 1200px) {
+
   }
 }
 
