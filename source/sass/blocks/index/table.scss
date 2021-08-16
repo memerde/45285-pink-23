@@ -1,6 +1,6 @@
 .table {
   translate: -260px;
-  width: 832px;
+  width: 834px;
   margin: 0 0 40px;
   table-layout: fixed;
   z-index: 2;
@@ -23,7 +23,7 @@
 .table__column {
   background: $dark;
   width: 276px;
-  padding: 13px 0 28px;
+  padding: 18px 0 30px;
 
   background-clip: padding-box;
 
@@ -44,6 +44,7 @@
   color: $white;
   font-weight: 700;
   margin: 0;
+  padding: 0 0 2px;
   text-align: center;
   text-transform: uppercase;
 
@@ -71,11 +72,12 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-height: 660px) {
+  @media (min-width: 660px) {
     padding-bottom: 7px;
+
   }
 
-  @media (min-height: 660px) {
+  @media (min-width: 1200px) {
     font-size: 24px;
     line-height: 30px;
   }
@@ -101,10 +103,10 @@
   text-transform: uppercase;
   font-size: 14px;
 
-  @media (min-height: 660px) {
-    left: 7px;
-    top: 17px;
-  }
+  // @media (min-width: 660px) {
+  //   left: 7px;
+  //   top: 17px;
+  // }
 }
 
 .table__column--hit::after {
@@ -113,13 +115,11 @@
   left: -2px;
   top: 0;
 
-  @media (min-height: 660px) {
-    content: url("/img/hit-ribbon-t.svg");
-    left: 0px;
-    top: -2px;
-
-
-  }
+  // @media (min-width: 660px) {
+  //   content: url("/img/hit-ribbon-t.svg");
+  //   left: 0px;
+  //   top: -2px;
+  // }
 }
 
 // заголовки строк - розовый фильтр.. вот это вот всё..
@@ -127,17 +127,17 @@
   width: 153px;
 
   text-align: left;
-  padding-left: 15px;
+  padding: 0 0 0 15px;
   font-size: 14px;
   background-color: $white;
   background-clip: padding-box;
   font-weight: 400;
 
-  @media (min-height: 660px) {
+  @media (min-width: 660px) {
     height: 47px;
   }
 
-  @media (min-height: 660px) {
+  @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 30px;
     padding: 15px 0 15px 20px;
@@ -146,10 +146,11 @@
 
 // паддинги для строк
 .table__row td {
-  padding: 20px 0 23px 20px;
+  // padding: 19px 0 18px 20px;
+  text-align: left;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 110%;
+  line-height: 16px;
 
   @media (min-width: 660px) {
     padding: 0;
@@ -165,14 +166,15 @@
 }
 
 .table__mobile {
+  display: block;
+  padding: 10px 0;
+  margin: 8px 0 12px 18px;
+
   @media (min-width: 660px) {
     display: none;
   }
 }
 
-td {
-text-align: center;
-}
 // .table__pink--base {
 //   display: none;
 
@@ -192,7 +194,10 @@ text-align: center;
 // }
 
 .table__pink--standart {
-
+  position: absolute;
+  display: block;
+  right: 293px;
+  top: 18px;
 
   @media (min-width: 660px) {
     display: block;
@@ -200,9 +205,8 @@ text-align: center;
     left: 373px;
     top: 11px;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table__pink--unlim {
@@ -214,9 +218,8 @@ text-align: center;
     left: 527px;
     top: 11px;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table__smile--base {
@@ -228,14 +231,13 @@ text-align: center;
     left: 219px;
     top: 8px;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table__smile--standart {
-  right: 295px;
-  top: 18px;
+  right: 293px;
+  top: 19px;
   position: absolute;
   display: block;
 
@@ -245,9 +247,8 @@ text-align: center;
     top: 11px;
     position: absolute;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table__smile--unlim {
@@ -259,42 +260,47 @@ text-align: center;
     top: 11px;
     position: absolute;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table__comment--base {
-  @media (min-height: 660px) {
+  @media (min-width: 660px) {
     position: absolute;
     top: 8px;
     left: 219px;
   }
-  @media (min-width: 1200px) {
 
+  @media (min-width: 1200px) {
+    top: 0;
   }
 }
 
+
 .table__comment--standart {
-  @media (min-height: 660px) {
-    position: absolute;
+  right: 295px;
+  top: 17px;
+  position: absolute;
+  display: block;
+
+  @media (min-width: 660px) {
     top: 8px;
     left: 375px;
   }
-  @media (min-width: 1200px) {
 
+  @media (min-width: 1200px) {
+    top: 0;
   }
 }
 
 .table__comment--unlim {
-  @media (min-height: 660px) {
+  @media (min-width: 660px) {
     position: absolute;
     top: 11px;
     right: 62px;
   }
-  @media (min-width: 1200px) {
 
-  }
+  @media (min-width: 1200px) {}
 }
 
 .table .table__rowheader {

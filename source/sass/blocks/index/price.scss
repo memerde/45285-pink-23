@@ -1,11 +1,13 @@
 .price {
   background-color: $white;
-  padding: 125px 0 45px;
+  padding: 102px 0 45px;
   margin: 0;
   // background-image: url("/img/grey-background2.png");
   // background-repeat: no-repeat;
   min-height: 457px;
   position: relative;
+  background-color: $grey-bg;
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
 
   @media (min-width: 660px) {
     padding: 98px 0 0;
@@ -38,7 +40,7 @@
 .price__slider-dots {
   display: flex;
   justify-content: space-between;
-  padding: 0 110px;
+  padding: 0 126px;
   margin: 0 auto;
 
   @media (min-width: 660px) {

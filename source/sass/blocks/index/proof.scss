@@ -1,7 +1,6 @@
 .proof {
   display: none;
 
-
   @media (min-width: 660px) {
     display: grid;
     background-color: $white;
@@ -15,7 +14,7 @@
   @media (min-width: 1200px) {
     background-color: $grey-bg;
     min-height: 444px;
-    padding: 123px 130px 0 0;
+    padding: 123px 170px 0 0;
     margin: 0;
     grid-template-rows: min-content min-content min-content;
   }
@@ -42,6 +41,16 @@
   }
 }
 
+
+.proof__br-desktop {
+  display: none;
+
+  @media (min-width:1200px) {
+    display: block;
+
+  }
+}
+
 .proof__paragraph {
   @media (min-width: 660px) {
     grid-column: 2/-1;
@@ -50,19 +59,21 @@
     line-height: 24px;
     margin: 0 0 15px;
     padding: 0;
+
+
   }
 
   @media (min-width: 1200px) {
     width: 530px;
     font-size: 18px;
     line-height: 30px;
-
-    br {
+margin-bottom: 32px;
+    .proof__br-tablet {
       display: none;
     }
-
   }
 }
+
 
 .proof__link {
   @media (min-width: 660px) {
