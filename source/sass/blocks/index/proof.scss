@@ -37,7 +37,6 @@
     br {
       display: none;
     }
-
   }
 }
 
@@ -45,9 +44,8 @@
 .proof__br-desktop {
   display: none;
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     display: block;
-
   }
 }
 
@@ -59,21 +57,19 @@
     line-height: 24px;
     margin: 0 0 15px;
     padding: 0;
-
-
   }
 
   @media (min-width: 1200px) {
     width: 530px;
     font-size: 18px;
     line-height: 30px;
-margin-bottom: 32px;
+    margin-bottom: 32px;
+
     .proof__br-tablet {
       display: none;
     }
   }
 }
-
 
 .proof__link {
   @media (min-width: 660px) {
@@ -113,6 +109,5 @@ margin-bottom: 32px;
     top: 32px;
     z-index: 1;
     display: block;
-
   }
 }

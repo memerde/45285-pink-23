@@ -121,15 +121,16 @@
   }
 }
 
-
 .review__slider-dots {
   display: flex;
   justify-content: space-between;
   padding: 0 110px;
   margin: 0 auto;
+
   @media (min-width: 660px) {
     margin: 0 187px;
   }
+
   @media (min-width: 1200px) {
     display: none;
   }

@@ -8,17 +8,22 @@
     padding: 44px 0 0;
     position: relative;
   }
-}
 
-.contacts::after {
-  @media (min-width: 660px) {
-    content: url("/img/triangle-t.png");
-    left: 0;
-    top: 350px;
-    display: block;
-    position: absolute;
+  @media (min-width: 1200px) {
+    padding: 59px 0 0;
+    position: relative;
   }
 }
+
+// .contacts::after {
+//   @media (min-width: 660px) {
+//     content: url("/img/triangle-t.png");
+//     left: 0;
+//     top: 350px;
+//     display: block;
+//     position: absolute;
+//   }
+// }
 
 .contacts__map {
   @media (min-width: 660px) {
@@ -31,12 +36,18 @@
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
-  margin: 0 0 37px;
+  margin: 0 0 34px;
   padding: 0;
 
   @media (min-width: 660px) {
     font-size: 40px;
     line-height: 53px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 39px;
   }
 }
 
@@ -51,15 +62,52 @@
 .contacts__item {
   margin: 0 auto;
   display: inline-block;
+  padding: 0;
 
   @media (min-width: 660px) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.contacts__item--decorative {
+  padding: 0;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__description {
+    padding: 0;
+    margin: 0;
+    line-height: 33px;
+
+    @media (min-width: 660px) {
+      line-height: 25px;
+      margin: 0 0 3px;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0 0 20px;
+      line-height: 25px;
+      font-size: 18px;
+    }
   }
 }
 
 .contacts__item:last-child {
   @media (min-width: 660px) {
     margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 
@@ -70,8 +118,90 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 10px;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 0 17px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0 160px 0 177px;
+  }
+}
+
+.contacts__item:nth-child(1) {
+  @media (min-width: 1200px) {
+    margin-right: 18px;
+  }
+}
+
+.contacts__item:nth-child(2) {
+  @media (min-width: 1200px) {
+    order: 3;
+  }
+}
+
+.contacts__item:nth-child(3) {
+  @media (min-width: 1200px) {
+    order: 2;
+  }
+}
+
+.contacts__description {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: 660px) {
+    margin: 0 0 3px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 0 20px;
+  }
+}
+
+.contacts__type {
+  display: block;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 0;
+  margin: 0 0 17px;
+  font-weight: 300;
+  color: $pink;
+  z-index: 2;
+  text-decoration: none;
+
+  @media (min-width: 660px) {
+    margin: 0 0 22.5px;
+    line-height: 33px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 0 20px;
+  }
+}
+
+.contacts__item--decorative::after {
+  display: block;
+  content: url("/img/triangle.svg");
+
+  z-index: -1;
+  position: absolute;
+  left: -54px;
+  top: 39px;
+
+  @media (min-width: 660px) {
+    content: url("/img/triangle-t.png");
+    left: -233px;
+    top: 61px;
+  }
+
+  @media (min-width: 1200px) {
+    content: url("/img/triangle-d.png");
+    left: -494px;
+    top: 111px;
   }
 }
 
@@ -87,55 +217,16 @@
   @media (min-width: 660px) {
     display: block;
   }
-}
 
-.contacts__description {
-  font-size: 18px;
-  line-height: auto;
-  padding: 0;
-  font-weight: 700;
-  margin: 0 0 4px;
-}
-
-.contacts__type {
-  display: block;
-  font-size: 24px;
-  line-height: auto;
-  padding: 0;
-  margin: 0 0 22px;
-  font-weight: 300;
-  color: $pink;
-  z-index: 2;
-  text-decoration: none;
-
-  @media (min-width: 660px) {
-    line-height: 33px;
+  @media (min-width: 1200px) {
+    display: none;
   }
 }
 
-.contacts__item--decorative {
-  padding: 0;
-  position: relative;
-  line-height: 30px;
+.contacts__map-desktop {
+  display: none;
 
-  .contacts__description {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-.contacts__item--decorative::after {
-  display: block;
-  content: url("/img/triangle.svg");
-
-  z-index: -1;
-  position: absolute;
-  left: -54px;
-  top: 37px;
-
-  @media (min-width: 660px) {
-    content: url("/img/triangle-t.png");
-    left: -225px;
-    top: 63px;
+  @media (min-width: 1200px) {
+    display: block;
   }
 }

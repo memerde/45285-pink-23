@@ -3,10 +3,6 @@
   text-align: center;
   padding: 33px 20px 40px;
 
-  &__index {
-    padding-top: 38px;
-  }
-
   &__catalog {
     padding-top: 40px;
   }
@@ -24,11 +20,23 @@
   }
 }
 
+.footer__index {
+  padding-top: 38px;
+
+  @media (min-width: 1200px) {
+    padding: 70px 131px 70px;
+  }
+}
+
 .footer__logo {
   margin: 0 0 37px;
 
   @media (min-width: 660px) {
     margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 21px 0 0;
   }
 }
 
@@ -57,6 +65,11 @@
     @media (min-width: 660px) {
       padding: 0 15px 0 0;
     }
+
+    @media (min-width: 1200px) {
+      padding: 0 12px 0 0;
+      font-size: 18px;
+    }
   }
 
   svg {
@@ -66,5 +79,10 @@
   @media (min-width: 660px) {
     margin: 0 0 0 7px;
     padding: 5px 0 0;
+  }
+
+  @media (min-width: 660px) {
+    margin: 0 0 0 7px;
+    padding: 0;
   }
 }

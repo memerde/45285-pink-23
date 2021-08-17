@@ -13,7 +13,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 940px;
+    width: 945px;
     translate: 0;
     margin: 0 auto;
   }
@@ -34,7 +34,7 @@
 
   @media (min-width: 1200px) {
     width: 236px;
-    padding: 4px 0 13px;
+    padding: 4px 0 15px;
   }
 }
 
@@ -74,7 +74,6 @@
 
   @media (min-width: 660px) {
     padding-bottom: 7px;
-
   }
 
   @media (min-width: 1200px) {
@@ -87,8 +86,6 @@
   position: relative;
   border: none;
   margin: 0;
-
-
 }
 
 .table__column--hit::before {
@@ -103,10 +100,15 @@
   text-transform: uppercase;
   font-size: 14px;
 
-  // @media (min-width: 660px) {
-  //   left: 7px;
-  //   top: 17px;
-  // }
+  @media (min-width: 660px) {
+    left: 7px;
+    top: 17px;
+  }
+
+  @media (min-width: 1200px) {
+    left: 13px;
+    top: 21px;
+  }
 }
 
 .table__column--hit::after {
@@ -115,11 +117,17 @@
   left: -2px;
   top: 0;
 
-  // @media (min-width: 660px) {
-  //   content: url("/img/hit-ribbon-t.svg");
-  //   left: 0px;
-  //   top: -2px;
-  // }
+  @media (min-width: 660px) {
+    content: url("/img/hit-ribbon-t.svg");
+    left: -2px;
+    top: 0;
+  }
+
+  @media (min-width: 1200px) {
+    content: url("/img/hit-ribbon.svg");
+    left: -1px;
+    top: 0;
+  }
 }
 
 // заголовки строк - розовый фильтр.. вот это вот всё..
@@ -140,7 +148,7 @@
   @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 30px;
-    padding: 15px 0 15px 20px;
+    padding: 12px 0 17px 24px;
   }
 }
 
@@ -175,23 +183,23 @@
   }
 }
 
-// .table__pink--base {
-//   display: none;
+.table__pink--base {
+  display: none;
 
-//   @media (min-width: 660px) {
-//     display: block;
-//     position: absolute;
-//     left: 217px;
-//     top: 11px;
-//   }
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    left: 217px;
+    top: 11px;
+  }
 
-//   @media (min-width: 1200px) {
-//     display: block;
-//     position: absolute;
-//     left: 337px;
-//     top: 20px;
-//   }
-// }
+  @media (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    left: 340px;
+    top: 18px;
+  }
+}
 
 .table__pink--standart {
   position: absolute;
@@ -206,7 +214,10 @@
     top: 11px;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    left: 575px;
+    top: 18px;
+  }
 }
 
 .table__pink--unlim {
@@ -219,7 +230,10 @@
     top: 11px;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    left: 811px;
+    top: 18px;
+  }
 }
 
 .table__smile--base {
@@ -232,7 +246,10 @@
     top: 8px;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    top: 15px;
+    left: 342px;
+  }
 }
 
 .table__smile--standart {
@@ -248,7 +265,10 @@
     position: absolute;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    top: 18px;
+    left: 575px;
+  }
 }
 
 .table__smile--unlim {
@@ -261,7 +281,10 @@
     position: absolute;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    top: 18px;
+    left: 811px;
+  }
 }
 
 .table__comment--base {
@@ -272,7 +295,8 @@
   }
 
   @media (min-width: 1200px) {
-    top: 0;
+    top: 15px;
+    left: 342px;
   }
 }
 
@@ -289,18 +313,26 @@
   }
 
   @media (min-width: 1200px) {
-    top: 0;
+    top: 15px;
+    left: 577px;
   }
 }
 
 .table__comment--unlim {
+  position: absolute;
+  right: 200px;
+  top: 20px;
+
   @media (min-width: 660px) {
     position: absolute;
     top: 11px;
     right: 62px;
   }
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    top: 18px;
+    left: 811px;
+  }
 }
 
 .table .table__rowheader {

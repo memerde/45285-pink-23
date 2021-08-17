@@ -91,7 +91,6 @@
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
-    background-color: $pink;
     margin: 0;
     text-align: center;
     padding: 55px 25px 0;
@@ -100,6 +99,7 @@
 
 .features__item-heading br {
   display: none;
+
   @media (min-width: 1200px) {
     display: block;
   }
@@ -132,7 +132,6 @@
     font-size: 30px;
     line-height: 30px;
     margin: 0 0 24px;
-
   }
 }
 
@@ -163,7 +162,7 @@
 .features__image--two {
   display: none;
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     display: block;
   }
 }
@@ -179,7 +178,7 @@
   @media (min-width: 1200px) {
     grid-row: 2/3;
     grid-column: 1/-1;
-    background-color: orange;
+    background-color: $pink;
     display: flex;
     justify-content: space-between;
     min-height: 302px;
@@ -201,7 +200,6 @@
     position: absolute;
     left: 700px;
     bottom: 0;
-    background-color: green;
   }
 }
 
