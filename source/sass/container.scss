@@ -1,0 +1,16 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media ($tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media ($desktop) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}

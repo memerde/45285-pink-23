@@ -12,111 +12,89 @@
 <body class="page__body">
 
   <header class="page-header page-header__open-menu">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/pink.svg" alt="Логотип «Пинк»" width="74" height="23">
-    </a>
-    <nav class="navigation">
-      <div class="navigation__wrapper">
-        <button class="navigation__toggle" type="button">
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
-            <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
-          </svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+    <div class="container">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/pink.svg" alt="Логотип «Пинк»" width="74" height="23">
+      </a>
+      <nav class="navigation">
+        <div class="navigation__wrapper">
+          <button class="navigation__toggle" type="button">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
+              <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a href="catalog.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
 
     <section class="cta">
+      <div class="container">
+        <img class="cta__img cta__img--mobile" src="/img/hand-m.png" alt="Рука с телефоном и приложением Пинк"
+          width="320" height="286">
+        <img class="cta__img cta__img--tablet" src="/img/hand-t.png" alt="Рука с телефоном и приложением Пинк"
+          width="660" height="545">
+        <img class="cta__img cta__img--desktop" src="/img/hand-d.png" alt="Рука с телефоном и приложением Пинк"
+          width="1050" height="645">
 
-      <img class="cta__img cta__img--mobile" src="/img/hand-m.png" alt="Рука с телефоном и приложением Пинк" width="320"
-        height="286">
-      <img class="cta__img cta__img--tablet" src="/img/hand-t.png" alt="Рука с телефоном и приложением Пинк" width="660"
-        height="545">
-      <img class="cta__img cta__img--desktop" src="/img/hand-d.png" alt="Рука с телефоном и приложением Пинк"
-        width="1050" height="645">
+        <div class="cta__block">
+          <h2 class="cta__heading">Взгляните на жизнь иначе!</h2>
+          <a href="https://www.apple.com/ru/app-store/" class="cta__button button">
+            Скачать приложение
+          </a>
 
-      <div class="cta__block">
-        <h2 class="cta__heading">Взгляните на жизнь иначе!</h2>
+          <ul class="cta__market-wrapper">
+            <li>
+              <a href="https://www.apple.com/ru/app-store/" class="cta__market cta__market--apple">
+                <img src="/img/apple-logo.svg" alt="Аппстор" width="47" height="56">
+              </a>
+            </li>
+            <li>
+              <a href="https://play.google.com/" class="cta__market cta__market--android">
+                <img src="/img/android-logo.png" alt="Гугл Плей Маркет" width="43" height="47">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="cta__market cta__market--ms">
+                <img src="/img/microsoft-logo.png" alt="Майкрософт Стор" width="44" height="41">
+              </a>
+            </li>
+          </ul>
 
-
-
-        <a href="https://www.apple.com/ru/app-store/" class="cta__button button">
-          Скачать приложение
-        </a>
-
-
-
-        <ul class="cta__market-wrapper">
-          <li>
-            <a href="https://www.apple.com/ru/app-store/" class="cta__market cta__market--apple">
-              <img src="/img/apple-logo.svg" alt="Аппстор" width="47" height="56">
-            </a>
-          </li>
-
-          <li>
-            <a href="https://play.google.com/" class="cta__market cta__market--android">
-              <img src="/img/android-logo.png" alt="Гугл Плей Маркет" width="43" height="47">
-            </a>
-          </li>
-
-          <li>
-
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="cta__market cta__market--ms">
-              <img src="/img/microsoft-logo.png" alt="Майкрософт Стор" width="44" height="41">
-            </a>
-
-          </li>
-        </ul>
-
-
-
-        <p class="cta__paragraph">
-          Доступно для iPhone, iPad, Android,
-          <br>
-          Windows Phone, OS X, Windows 8
-        </p>
-      </div>
+          <p class="cta__paragraph">
+            Доступно для iPhone, iPad, Android,
+            <br>
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
     </section>
 
-    <section class="features">
+    <section class="features container">
       <h2 class="visually-hidden">Особенности приложения «Пинк»</h2>
       <div class="features__slogan">
-        <!-- <p class="features__heading">
-          Устали от серости мегаполиса?
-        </p>
-
-        <p class="features__heading features__heading--tablet">
-          Нам есть, что вам предложить!
-        </p> -->
-
         <p class="features__heading">
-          Устали от серости мегаполиса?
-
-
-        </p>
+          Устали от серости мегаполиса?</p>
         <p class="features__heading">
-          Нам есть, что вам предложить!
-
-        </p>
+          Нам есть, что вам предложить!</p>
       </div>
 
       <ul class="features__list">
@@ -156,9 +134,10 @@
         <!-- <img src="img/phone3t.png" alt="Мобильный телефон с приложением
             Пинк" width="268" height="547" class="features__image features__image--three-t"> -->
       </div>
+      </div>
     </section>
 
-    <section class="proof">
+    <section class="proof container">
       <img width="238" height="276" class="proof__img" src="img/timer.svg"
         alt="Таймер подтверждающий слова британских учёных с числом 24 на циферблате">
       <img width="298" height="345" class="proof__img-desktop" src="img/timer.svg"
@@ -176,23 +155,25 @@
     </section>
 
     <section class="review">
-      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <div class="container">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
 
-      <blockquote class="review__quote">
-        <cite class="review__author">
-          <span class="review__author-name">Николай Петров</span>
-          <span class="review__author-info">25 лет, водитель трамвая</span>
-        </cite>
-        <p class="review__description">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-          познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
-      </blockquote>
+        <blockquote class="review__quote">
+          <cite class="review__author">
+            <span class="review__author-name">Николай Петров</span>
+            <span class="review__author-info">25 лет, водитель трамвая</span>
+          </cite>
+          <p class="review__description">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
 
-      <div class="review__slider-dots">
-        <input class="review__slide" type="radio" value="slider" name="slider" checked>
-        <input class="review__slide" type="radio" value="slider" name="slider">
-        <input class="review__slide" type="radio" value="slider" name="slider">
+        <div class="review__slider-dots">
+          <input class="review__slide" type="radio" value="slider" name="slider" checked>
+          <input class="review__slide" type="radio" value="slider" name="slider">
+          <input class="review__slide" type="radio" value="slider" name="slider">
+        </div>
       </div>
     </section>
 
@@ -343,22 +324,23 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__heading">Остались вопросы?<br> Свяжитесь с нами!</h2>
-      <ul class="contacts__list" role="none">
-        <li class="contacts__item">
-          <p class="contacts__description">Звоните:</p>
-          <a class="contacts__type" href="tel:+7812556666">+7 (812) 555-66-66</a>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__description">Пишите:</p>
-          <a class="contacts__type" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contacts__item contacts__item--decorative">
-          <p class="contacts__description">Приезжайте в гости:</p>
-          <p class="contacts__type">ул. Большая<br> Конюшенная, 19/8</p>
-        </li>
-      </ul>
-
+      <div class="container">
+        <h2 class="contacts__heading">Остались вопросы?<br> Свяжитесь с нами!</h2>
+        <ul class="contacts__list" role="none">
+          <li class="contacts__item">
+            <p class="contacts__description">Звоните:</p>
+            <a class="contacts__type" href="tel:+7812556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__description">Пишите:</p>
+            <a class="contacts__type" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item contacts__item--decorative">
+            <p class="contacts__description">Приезжайте в гости:</p>
+            <p class="contacts__type">ул. Большая<br> Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
       <img class="contacts__map-mobile" src="/img/map.png" alt="Карта" width="320" height="200">
       <img class="contacts__map-tablet" src="/img/map-t.png" alt="Карта" width="660" height="374">
       <img class="contacts__map-desktop" src="/img/map-d.png" alt="Карта" width="1200" height="502">
@@ -366,12 +348,13 @@
       <!-- <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627161821223!5m2!1sru!2sru"
         width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy">
-
       </iframe> -->
+
     </section>
   </main>
-  <footer class="footer footer__index">
-    <img src="img/logo.svg" alt="Логотип «Пинк»" class="footer__logo" width="145" height="40">
+  <footer class="footer footer__index container">
+
+    <img src="img/pinklogo.svg" alt="Логотип «Пинк»" class="footer__logo" width="145" height="40">
     <ul class="footer__social social">
       <li class="social__item">
         <a href="https://twitter.com/htmlacademy_ru">
@@ -411,6 +394,7 @@
         <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </div>
+
   </footer>
 </body>
 

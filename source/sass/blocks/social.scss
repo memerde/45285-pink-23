@@ -1,11 +1,11 @@
 .social {
   margin-bottom: 33px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 1px 0 0;
   }
 }
@@ -26,11 +26,11 @@
     justify-content: center;
   }
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     padding-right: 10px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     padding-right: 6px;
   }
 }

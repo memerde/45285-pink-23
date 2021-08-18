@@ -1,14 +1,14 @@
 .features {
   background-color: $white;
-  padding: 40px 20px 0;
+  padding-top: 40px;
   background-image: url("/img/grey-background.png");
   background-repeat: no-repeat;
   background-position: bottom left;
   min-height: 1002px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: grid;
-    padding: 59px 20px 0;
+    padding-top: 46px;
     min-height: 725px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
@@ -17,8 +17,8 @@
     background-image: url("/img/grey-background-t.png");
   }
 
-  @media (min-width: 1200px) {
-    padding: 62px 131px 0;
+  @media ($desktop) {
+    padding-top: 62px;
     background-position: 0 278px;
   }
 }
@@ -27,7 +27,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-row: 1/2;
     grid-column: 1/-1;
   }
@@ -44,13 +44,13 @@
   list-style: none;
 
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     font-size: 40px;
-    line-height: auto;
-    margin: 0 0 12px;
+    line-height: 54px;
+    margin: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 50px;
     line-height: 68px;
     margin: 0 auto;
@@ -59,12 +59,12 @@
 }
 
 .features__heading:nth-child(2) {
-  @media (min-width: 660px) {
-    margin: 10px 100px 0;
-    line-height: 55px;
+  @media ($tablet) {
+    margin: 0 100px 0;
+    line-height: 54px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 0 200px 56px;
     line-height: 68px;
   }
@@ -77,7 +77,7 @@
   text-align: center;
   list-style: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     text-align: left;
     grid-row: 2/-1;
     grid-column: 2/-1;
@@ -86,7 +86,7 @@
     position: relative;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     grid-row: 3/-1;
     grid-column: 1/-1;
     display: flex;
@@ -100,7 +100,7 @@
 .features__item-heading br {
   display: none;
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: block;
   }
 }
@@ -110,13 +110,13 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0 0 35px;
     display: block;
     position: static;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     width: 249px;
   }
 }
@@ -128,7 +128,7 @@
   padding: 0;
   margin: 0 0 11px;
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 30px;
     line-height: 30px;
     margin: 0 0 24px;
@@ -142,17 +142,17 @@
   line-height: 24px;
   font-weight: 400;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 18px;
     line-height: 30px;
   }
 
   br {
-    @media (min-width: 1200px) {
+    @media ($desktop) {
       display: none;
     }
   }
@@ -162,7 +162,7 @@
 .features__image--two {
   display: none;
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: block;
   }
 }
@@ -170,12 +170,12 @@
 .features__images {
   position: relative;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-row: 2/-1;
     grid-column: 1/2;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     grid-row: 2/3;
     grid-column: 1/-1;
     background-color: $pink;
@@ -191,11 +191,11 @@
   left: 62px;
   z-index: 0;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: none;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: block;
     position: absolute;
     left: 700px;
@@ -206,7 +206,7 @@
 .features__br {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
   }
 }
@@ -214,7 +214,7 @@
 .features__image--three-t {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     position: absolute;
     top: 36px;
@@ -222,13 +222,13 @@
     z-index: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: none;
   }
 }
 
 // h3:nth-child(3) {
-//   @media (min-width: 1200px) {
+//   @media ($desktop) {
 //     padding: 0 105px 0;
 //     background-color: red;
 //   }

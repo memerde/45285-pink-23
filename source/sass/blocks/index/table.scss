@@ -6,13 +6,13 @@
   z-index: 2;
   border-collapse: collapse;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     width: 620px;
     translate: 20px;
     margin: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     width: 945px;
     translate: 0;
     margin: 0 auto;
@@ -27,12 +27,12 @@
 
   background-clip: padding-box;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     width: 155px;
     padding: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     width: 236px;
     padding: 4px 0 15px;
   }
@@ -48,14 +48,14 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     padding: 12px 10px 0;
     margin: 0;
     font-size: 16px;
     line-height: 30px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     padding: 12px 10px 0;
     margin: 0;
     font-size: 18px;
@@ -72,11 +72,11 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     padding-bottom: 7px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 24px;
     line-height: 30px;
   }
@@ -100,12 +100,12 @@
   text-transform: uppercase;
   font-size: 14px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     left: 7px;
     top: 17px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     left: 13px;
     top: 21px;
   }
@@ -117,13 +117,13 @@
   left: -2px;
   top: 0;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     content: url("/img/hit-ribbon-t.svg");
     left: -2px;
     top: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     content: url("/img/hit-ribbon.svg");
     left: -1px;
     top: 0;
@@ -141,11 +141,11 @@
   background-clip: padding-box;
   font-weight: 400;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     height: 47px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 18px;
     line-height: 30px;
     padding: 12px 0 17px 24px;
@@ -160,7 +160,7 @@
   font-size: 14px;
   line-height: 16px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     padding: 0;
   }
 }
@@ -168,7 +168,7 @@
 .table__row {
   position: relative;
 
-  // @media (min-width: 660px) {
+  // @media ($tablet) {
 
   // }
 }
@@ -178,7 +178,7 @@
   padding: 10px 0;
   margin: 8px 0 12px 18px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: none;
   }
 }
@@ -186,14 +186,14 @@
 .table__pink--base {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     position: absolute;
     left: 217px;
     top: 11px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: block;
     position: absolute;
     left: 340px;
@@ -207,14 +207,14 @@
   right: 293px;
   top: 18px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     position: absolute;
     left: 373px;
     top: 11px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     left: 575px;
     top: 18px;
   }
@@ -223,14 +223,14 @@
 .table__pink--unlim {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     position: absolute;
     left: 527px;
     top: 11px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     left: 811px;
     top: 18px;
   }
@@ -239,14 +239,14 @@
 .table__smile--base {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     position: absolute;
     left: 219px;
     top: 8px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 15px;
     left: 342px;
   }
@@ -258,14 +258,14 @@
   position: absolute;
   display: block;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     left: 373px;
     top: 11px;
     position: absolute;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 18px;
     left: 575px;
   }
@@ -274,27 +274,27 @@
 .table__smile--unlim {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: block;
     right: 62px;
     top: 11px;
     position: absolute;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 18px;
     left: 811px;
   }
 }
 
 .table__comment--base {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     position: absolute;
     top: 8px;
     left: 219px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 15px;
     left: 342px;
   }
@@ -307,12 +307,12 @@
   position: absolute;
   display: block;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     top: 8px;
     left: 375px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 15px;
     left: 577px;
   }
@@ -323,13 +323,13 @@
   right: 200px;
   top: 20px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     position: absolute;
     top: 11px;
     right: 62px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     top: 18px;
     left: 811px;
   }

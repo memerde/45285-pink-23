@@ -5,25 +5,25 @@
   background-color: $dark;
   min-height: 667px;
 
-  @media (min-width: 660px) {
-    padding: 93px 20px 0;
+  @media ($tablet) {
+    padding: 93px 0 0;
     min-height: 619px;
   }
 
-  @media (min-width: 1200px) {
-    padding: 100px 130px 0;
+  @media ($desktop) {
+    padding: 100px 0 0;
     min-height: 743px;
   }
 }
 
 .cta__block {
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   min-height: 613px;
   flex-direction: column;
 
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     width: 300px;
     padding: 0;
     margin: 0;
@@ -31,7 +31,7 @@
     justify-content: space-between;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     padding: 0;
     margin: 0;
     min-height: 411px;
@@ -49,13 +49,13 @@
   line-height: 120%;
   color: $white;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0 0 19px;
     font-size: 40px;
     padding: 0 40px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 0 0 36px;
     font-size: 50px;
     line-height: 68px;
@@ -69,7 +69,7 @@
   top: 110px;
 
   &--mobile {
-    @media (min-width: 660px) {
+    @media ($tablet) {
       display: none;
     }
   }
@@ -79,7 +79,7 @@
       display: none;
     }
 
-    @media (min-width: 660px) {
+    @media ($tablet) {
       display: block;
       left: 0;
       top: 74px;
@@ -87,7 +87,7 @@
       position: absolute;
     }
 
-    @media (min-width: 1200px) {
+    @media ($desktop) {
       display: none;
     }
   }
@@ -95,11 +95,11 @@
   &--desktop {
     display: none;
 
-    @media (min-width: 660px) {
+    @media ($tablet) {
       display: none;
     }
 
-    @media (min-width: 1200px) {
+    @media ($desktop) {
       display: block;
       left: 146px;
       top: 98px;
@@ -112,12 +112,12 @@
 .cta__button {
   margin-bottom: 18px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     z-index: 2;
     margin-bottom: 20px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin-bottom: 53px;
     font-size: 21px;
   }
@@ -131,13 +131,13 @@
   align-items: flex-start;
   list-style: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     justify-content: start;
     padding: 0 46px 0;
     z-index: 2;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     padding: 0 47px 0;
     margin-bottom: 49px;
   }
@@ -150,12 +150,12 @@
 .cta__market--apple {
   padding: 0;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin-right: 35px;
     padding: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin-right: 34px;
     padding: 0;
   }
@@ -164,12 +164,12 @@
 .cta__market--android {
   margin-top: 6px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin-right: 35px;
     margin-top: 6px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 8px 36px 0 0;
   }
 }
@@ -177,11 +177,11 @@
 .cta__market--ms {
   margin-top: 12px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin-top: 9px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 12px 1px 0;
   }
 }
@@ -195,7 +195,7 @@
   line-height: 24px;
   font-weight: 300;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     font-size: 18px;
     line-height: 24px;
     z-index: 2;

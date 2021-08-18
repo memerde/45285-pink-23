@@ -14,11 +14,11 @@
   background-position: top center;
 
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     width: 660px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     width: 1200px;
   }
 }

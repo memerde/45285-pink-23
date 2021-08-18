@@ -2,17 +2,17 @@
   position: relative;
   z-index: 2;
   background-color: $white;
-  padding: 46px 20px 11px;
+  padding: 46px 0 11px;
   margin: 0;
   min-height: 343px;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0;
     min-height: 278px;
     padding: 31px 0 14px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 0;
     padding: 185px 0 0;
     min-height: 405px;
@@ -22,7 +22,7 @@
 }
 
 .review::after {
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     content: url("/img/quotes.svg");
     position: absolute;
     left: 561px;
@@ -40,16 +40,16 @@
   min-height: 217px;
   position: relative;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 0 2px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin: 0 auto;
-    padding: 0 220px;
+    padding: 0 120px;
   }
 }
 
@@ -60,14 +60,14 @@
   text-align: center;
   display: block;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 6px;
     order: 1;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 2px;
@@ -78,14 +78,14 @@
 .review__author-info {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     text-align: center;
     font-style: normal;
     display: block;
     order: 2;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 6px;
@@ -101,20 +101,20 @@
   margin: 0;
 
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     font-size: 18px;
     line-height: 30px;
     order: 1;
     margin-bottom: 35px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     margin-bottom: 36px;
   }
 }
 
 .review__author {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     order: 2;
@@ -127,11 +127,11 @@
   padding: 0 110px;
   margin: 0 auto;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     margin: 0 187px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
 .proof {
   display: none;
 
-  @media (min-width: 660px) {
+  @media ($tablet) {
     display: grid;
     background-color: $white;
     grid-template-columns: 1fr 1fr;
@@ -11,17 +11,18 @@
     padding: 95px 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     background-color: $grey-bg;
+    grid-template-columns: 1fr 570px;
     min-height: 444px;
-    padding: 123px 170px 0 0;
+    padding: 123px 0 0;
     margin: 0;
     grid-template-rows: min-content min-content min-content;
   }
 }
 
 .proof__header {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-column: 2/-1;
     grid-row: 1/2;
     font-size: 30px;
@@ -30,8 +31,8 @@
     padding: 0;
   }
 
-  @media (min-width: 1200px) {
-    margin: 0 0 22px;
+  @media ($desktop) {
+    margin: 0 0 22px 0;
     padding: 0;
 
     br {
@@ -44,13 +45,13 @@
 .proof__br-desktop {
   display: none;
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: block;
   }
 }
 
 .proof__paragraph {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-column: 2/-1;
     grid-row: 2/3;
     font-size: 14px;
@@ -59,7 +60,7 @@
     padding: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     width: 530px;
     font-size: 18px;
     line-height: 30px;
@@ -72,12 +73,12 @@
 }
 
 .proof__link {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-column: 2/-1;
     grid-row: 3/4;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     color: $pink;
     font-size: 18px;
     line-height: 30px;
@@ -85,16 +86,16 @@
 }
 
 .proof__img {
-  @media (min-width: 660px) {
+  @media ($tablet) {
     grid-column: 1/2;
     grid-row: 1/-1;
     position: absolute;
-    left: 20px;
+    left: 0;
     top: -41px;
     z-index: 1;
   }
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
     display: none;
   }
 }
@@ -102,7 +103,7 @@
 .proof__img-desktop {
   display: none;
 
-  @media (min-width: 1200px) {
+  @media ($desktop) {
 
     position: absolute;
     left: 131px;
