@@ -11,7 +11,7 @@
     padding-top: 58px;
   }
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     padding: 37px 0;
     justify-content: space-between;
@@ -23,7 +23,7 @@
 .footer__index {
   padding-top: 38px;
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 70px 0 70px;
   }
 }
@@ -31,11 +31,11 @@
 .footer__logo {
   margin: 0 0 37px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0 21px 0 0;
   }
 }
@@ -48,7 +48,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     padding: 0;
   }
 }
@@ -62,11 +62,11 @@
   p {
     font-size: 14px;
 
-    @media ($tablet) {
+    @media (min-width: $tablet) {
       padding: 0 15px 0 0;
     }
 
-    @media ($desktop) {
+    @media (min-width: $desktop) {
       padding: 0 12px 0 0;
       font-size: 18px;
     }
@@ -76,12 +76,12 @@
     display: block;
   }
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 0 0 7px;
     padding: 5px 0 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
   }
 }

@@ -1,4 +1,5 @@
 @import "normalize.scss";
+@import "var.scss";
 @import "global.scss";
 @import "colors.scss";
 @import "fonts.scss";
@@ -26,4 +27,4 @@
 @import "blocks/catalog/post-of-the-day.scss";
 @import "blocks/catalog/upload.scss";
 @import "blocks/catalog/editor.scss";
-@import "container.scss";
+@import "blocks/container.scss";

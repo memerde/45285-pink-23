@@ -1,28 +1,37 @@
 .proof {
   display: none;
 
-  @media ($tablet) {
-    display: grid;
+  @media (min-width: $tablet) {
     background-color: $white;
+    padding: 95px 0;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $grey-bg;
+    min-height: 444px;
+    padding: 123px 0 0;
+  }
+}
+
+.proof__container {
+  @media (min-width: $tablet) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     z-index: 2;
     position: relative;
-    padding: 95px 0;
   }
 
-  @media ($desktop) {
-    background-color: $grey-bg;
+  @media (min-width: $desktop) {
     grid-template-columns: 1fr 570px;
-    min-height: 444px;
-    padding: 123px 0 0;
     margin: 0;
     grid-template-rows: min-content min-content min-content;
   }
 }
 
 .proof__header {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     grid-column: 2/-1;
     grid-row: 1/2;
     font-size: 30px;
@@ -31,7 +40,7 @@
     padding: 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 22px 0;
     padding: 0;
 
@@ -45,13 +54,13 @@
 .proof__br-desktop {
   display: none;
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     display: block;
   }
 }
 
 .proof__paragraph {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     grid-column: 2/-1;
     grid-row: 2/3;
     font-size: 14px;
@@ -60,7 +69,7 @@
     padding: 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     width: 530px;
     font-size: 18px;
     line-height: 30px;
@@ -73,12 +82,12 @@
 }
 
 .proof__link {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     grid-column: 2/-1;
     grid-row: 3/4;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     color: $pink;
     font-size: 18px;
     line-height: 30px;
@@ -86,7 +95,7 @@
 }
 
 .proof__img {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     grid-column: 1/2;
     grid-row: 1/-1;
     position: absolute;
@@ -95,7 +104,7 @@
     z-index: 1;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     display: none;
   }
 }
@@ -103,11 +112,11 @@
 .proof__img-desktop {
   display: none;
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
 
     position: absolute;
-    left: 131px;
-    top: 32px;
+    left: 0;
+    top: -90px;
     z-index: 1;
     display: block;
   }

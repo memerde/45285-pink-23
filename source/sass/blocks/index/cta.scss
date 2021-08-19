@@ -1,16 +1,15 @@
 .cta {
   margin: 0;
   padding: 23px 0 31px;
-  position: relative;
-  background-color: $dark;
+  // background-color: $dark;
   min-height: 667px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     padding: 93px 0 0;
     min-height: 619px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 100px 0 0;
     min-height: 743px;
   }
@@ -23,7 +22,7 @@
   flex-direction: column;
 
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     width: 300px;
     padding: 0;
     margin: 0;
@@ -31,7 +30,7 @@
     justify-content: space-between;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
     margin: 0;
     min-height: 411px;
@@ -49,13 +48,13 @@
   line-height: 120%;
   color: $white;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 0 19px;
     font-size: 40px;
     padding: 0 40px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 36px;
     font-size: 50px;
     line-height: 68px;
@@ -66,28 +65,26 @@
 .cta__img {
   position: absolute;
   left: 0;
-  top: 110px;
+  top: 87px;
 
   &--mobile {
-    @media ($tablet) {
+    @media (min-width: $tablet) {
       display: none;
     }
   }
 
   &--tablet {
-    @media (min-width: 0) {
-      display: none;
-    }
+    display: none;
 
-    @media ($tablet) {
+    @media (min-width: $tablet) {
       display: block;
       left: 0;
-      top: 74px;
+      top: -19px;
       z-index: 0;
       position: absolute;
     }
 
-    @media ($desktop) {
+    @media (min-width: $desktop) {
       display: none;
     }
   }
@@ -95,14 +92,14 @@
   &--desktop {
     display: none;
 
-    @media ($tablet) {
+    @media (min-width: $tablet) {
       display: none;
     }
 
-    @media ($desktop) {
+    @media (min-width: $desktop) {
       display: block;
       left: 146px;
-      top: 98px;
+      top: -2px;
       z-index: 0;
       position: absolute;
     }
@@ -112,12 +109,12 @@
 .cta__button {
   margin-bottom: 18px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     z-index: 2;
     margin-bottom: 20px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 53px;
     font-size: 21px;
   }
@@ -131,13 +128,13 @@
   align-items: flex-start;
   list-style: none;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     justify-content: start;
     padding: 0 46px 0;
     z-index: 2;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 0 47px 0;
     margin-bottom: 49px;
   }
@@ -150,12 +147,12 @@
 .cta__market--apple {
   padding: 0;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin-right: 35px;
     padding: 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin-right: 34px;
     padding: 0;
   }
@@ -164,12 +161,12 @@
 .cta__market--android {
   margin-top: 6px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin-right: 35px;
     margin-top: 6px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 8px 36px 0 0;
   }
 }
@@ -177,11 +174,11 @@
 .cta__market--ms {
   margin-top: 12px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin-top: 9px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 12px 1px 0;
   }
 }
@@ -195,7 +192,7 @@
   line-height: 24px;
   font-weight: 300;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
     z-index: 2;

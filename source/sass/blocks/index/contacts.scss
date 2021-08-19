@@ -3,21 +3,25 @@
   padding: 40px 0 0;
   margin: 0;
   text-align: center;
-  position: relative;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     padding: 44px 0 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 59px 0 0;
+    min-height: 867px;
   }
 }
 
 .contacts__map {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     width: 660px;
     height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
   }
 }
 
@@ -28,12 +32,12 @@
   margin: 0 0 34px;
   padding: 0;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     font-size: 40px;
     line-height: 53px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     font-size: 50px;
     line-height: 68px;
     margin-bottom: 39px;
@@ -53,23 +57,23 @@
   display: inline-block;
   padding: 0;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 29px 20px 48px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0;
   }
 }
 
 .contacts__item:last-child {
-  position: relative;
+  // position: relative;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 auto;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0;
   }
 }
@@ -78,7 +82,7 @@
   margin: 0 0 16px;
 
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -86,14 +90,14 @@
     margin: 0;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
     margin: 0 30px 0 46px;
   }
 }
 
 .contacts__item:nth-child(1) {
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin-right: 18px;
   }
 }
@@ -101,14 +105,14 @@
 .contacts__item:nth-child(2) {
   margin-bottom: 4px;
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     order: 3;
     margin-bottom: 0;
   }
 }
 
 .contacts__item:nth-child(3) {
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     order: 2;
   }
 }
@@ -120,11 +124,11 @@
   font-weight: 700;
   margin: 0;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 0 3px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 20px;
   }
 }
@@ -140,12 +144,12 @@
 
   text-decoration: none;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     margin: 0 0 22.5px;
     line-height: 33px;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     margin: 0 0 20px;
   }
 }
@@ -158,22 +162,25 @@
   left: 0;
   top: 321px;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     content: url("/img/triangle-t.png");
-    left: 0;
-    top: 350px;
-    z-index: 1;
+    left: 117px;
+    top: 2866px;
+    z-index: 2;
+    background-color: $pink;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     content: url("/img/triangle-d.png");
     top: 345px;
+    left: 104px;
+    // background-color: red;
     z-index: 1;
   }
 }
 
 .contacts__map-mobile {
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -181,11 +188,11 @@
 .contacts__map-tablet {
   display: none;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     display: block;
   }
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     display: none;
   }
 }
@@ -193,7 +200,7 @@
 .contacts__map-desktop {
   display: none;
 
-  @media ($desktop) {
+  @media (min-width: $desktop) {
     display: block;
   }
 }

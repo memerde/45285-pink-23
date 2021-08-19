@@ -5,24 +5,28 @@
   // background-repeat: no-repeat;
   min-height: 457px;
   position: relative;
-  background-color: $grey-bg;
-  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+  // background: linear-gradient(175.2deg, transparent 41%, $grey-bg 41.1%);
 
-  @media ($tablet) {
+  // background-color: $grey-bg;
+  // clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+
+  @media (min-width: $tablet) {
     padding: 98px 0 0;
     margin: 0;
     // background-position: 0 0;
     // background-size: cover;
     // background-image: url("/img/grey-background-price-t.png");
-    background-color: $grey-bg;
+    // background-color: $grey-bg;
     min-height: 386px;
-    clip-path: polygon(0 10.7%, 100% 0, 100% 100%, 0% 100%);
+    // clip-path: polygon(0 10.7%, 100% 0, 100% 100%, 0% 100%);
   }
 
-  @media ($desktop) {
-    min-height: 534px;
-    padding: 157px 0 0;
-    clip-path: polygon(0 18.7%, 100% 0, 100% 100%, 0% 100%);
+  @media (min-width: $desktop) {
+    min-height: 554px;
+    padding: 177px 0 0;
+    background: linear-gradient(175.2deg, transparent 19%, $grey-bg 19.1%);
+
+    // clip-path: polygon(0 18.7%, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -30,7 +34,7 @@
   width: 100%;
   overflow: hidden;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     overflow: visible;
   }
 }
@@ -41,7 +45,7 @@
   padding: 0 126px;
   margin: 0 auto;
 
-  @media ($tablet) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
