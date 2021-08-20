@@ -155,26 +155,23 @@
 }
 
 // .contacts__item--decorative::after {
-.contacts::after {
+.contacts__list::after {
   content: url("/img/triangle.svg");
-
   position: absolute;
   left: 0;
-  top: 321px;
+  top: 280px;
 
   @media (min-width: $tablet) {
     content: url("/img/triangle-t.png");
-    left: 117px;
-    top: 2866px;
+    left: 0;
+    top: 305px;
     z-index: 2;
-    background-color: $pink;
   }
 
   @media (min-width: $desktop) {
     content: url("/img/triangle-d.png");
-    top: 345px;
-    left: 104px;
-    // background-color: red;
+    top: 285px;
+    left: 0;
     z-index: 1;
   }
 }

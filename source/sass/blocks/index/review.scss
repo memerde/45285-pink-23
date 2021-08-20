@@ -1,5 +1,4 @@
 .review {
-  position: relative;
   z-index: 2;
   background-color: $white;
   padding: 46px 0 11px;
@@ -17,15 +16,6 @@
     padding: 185px 0 0;
     display: flex;
     flex-direction: column;
-  }
-}
-
-.review::after {
-  @media (min-width: $desktop) {
-    content: url("/img/quotes.svg");
-    position: absolute;
-    left: 660px;
-    top: 72px;
   }
 }
 
@@ -50,6 +40,15 @@
     margin: 0 auto;
     padding: 0 120px;
     min-height: 200px;
+  }
+}
+
+.review__quote::after {
+  @media (min-width: $desktop) {
+    content: url("/img/quotes.svg");
+    position: absolute;
+    left: 431px;
+    top: -112px;
   }
 }
 
