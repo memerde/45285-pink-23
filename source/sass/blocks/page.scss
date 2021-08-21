@@ -5,20 +5,25 @@
 .page__body {
   height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
-  background-color: $dark;
+  // background-color: $white;
   color: $dark;
-  margin: 0 auto;
-  width: 320px;
-  background-image: url("/img/back-mobile.png");
+  background: url("/img/back-mobile.png"), linear-gradient(180deg, $dark 21.2%, $white 21.2%);
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  // background-color: $dark;
   background-repeat: no-repeat;
-  background-position: top center;
 
+  background-position: 0 0, 0 0;
 
-  @media (min-width: 660px) {
-    width: 660px;
+  @media (min-width: $tablet) {
+    background: url("/img/back-mobile.png"), linear-gradient(180deg, $dark 21.3%, $white 21.3%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 0;
   }
 
-  @media (min-width: 1200px) {
-    width: 1200px;
+  @media (min-width: $desktop) {
+    background: url("/img/back-mobile.png"), linear-gradient(180deg, $dark 20.23%, $white 20.23%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 0;
   }
 }

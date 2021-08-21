@@ -1,25 +1,66 @@
 .table {
-  translate: -260px;
-  width: 832px;
+  translate: -280px;
+  width: 834px;
   margin: 0 0 40px;
   table-layout: fixed;
   z-index: 2;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    translate: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 942px;
+    translate: 0;
+    margin: 0 auto;
+  }
 }
 
+// ширина трёх синих колонок
 .table__column {
   background: $dark;
   width: 276px;
-  padding: 13px 0 28px;
+  padding: 18px 0 30px;
+
+  background-clip: padding-box;
+
+  @media (min-width: $tablet) {
+    width: 155px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 236px;
+    padding: 4px 0 15px;
+  }
 }
 
 .table__header {
   font-size: 16px;
-  line-height: 27px;
+  // line-height: 27px;
   color: $white;
   font-weight: 700;
   margin: 0;
+  padding: 0 0 2px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding: 12px 10px 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 12px 10px 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .table__subheader {
@@ -30,10 +71,21 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .table__column--hit {
   position: relative;
+  border: none;
+  margin: 0;
 }
 
 .table__column--hit::before {
@@ -47,6 +99,16 @@
   font-weight: 300;
   text-transform: uppercase;
   font-size: 14px;
+
+  @media (min-width: $tablet) {
+    left: 7px;
+    top: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 15px;
+    top: 21px;
+  }
 }
 
 .table__column--hit::after {
@@ -54,51 +116,267 @@
   position: absolute;
   left: -2px;
   top: 0;
+
+  @media (min-width: $tablet) {
+    content: url("/img/hit-ribbon-t.svg");
+    left: -2px;
+    top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    content: url("/img/hit-ribbon.svg");
+    left: 0;
+    top: 0;
+  }
 }
 
+// заголовки строк - розовый фильтр.. вот это вот всё..
 .table__rowheader {
-  background-color: $white;
   width: 153px;
-  height: 45px;
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px;
 
+  text-align: left;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  background-color: $white;
+  background-clip: padding-box;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    height: 47px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 12px 0 17px 20px;
+  }
 }
 
+// паддинги для строк
 .table__row td {
-  background-color: $white;
-  padding: 20px 0 23px 20px;
+  // padding: 19px 0 18px 20px;
+  text-align: left;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 110%;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .table__row {
   position: relative;
+
+  // @media (min-width: $tablet) {
+
+  // }
 }
 
-.table__mobile--filter {
+.table__mobile {
+  display: block;
+  padding: 10px 0;
+  margin: 8px 0 12px 18px;
 
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.table__pink--base {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    left: 217px;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    position: absolute;
+    left: 337px;
+    top: 18px;
+  }
+}
+
+.table__pink--standart {
+  position: absolute;
+  display: block;
+  right: 293px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    left: 373px;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 572px;
+    top: 18px;
+  }
+}
+
+.table__pink--unlim {
+  position: absolute;
+  display: block;
+  right: 140px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    left: 527px;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 808px;
+    top: 18px;
+  }
+}
+
+.table__smile--base {
+  position: absolute;
+  display: block;
+  left: 150px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    left: 219px;
+    top: 8px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 15px;
+    left: 339px;
+  }
+}
+
+.table__smile--standart {
+  right: 293px;
+  top: 19px;
+  position: absolute;
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: block;
+    left: 373px;
+    top: 11px;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop) {
+    top: 18px;
+    left: 572px;
+  }
+}
+
+.table__smile--unlim {
+  position: absolute;
+  display: block;
+  right: 140px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    right: 62px;
+    top: 11px;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop) {
+    top: 18px;
+    left: 808px;
+  }
+}
+
+.table__comment--base {
+  position: absolute;
+  display: block;
+  left: 150px;
+  top: 18px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 8px;
+    left: 219px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 15px;
+    left: 339px;
+  }
+}
+
+
+.table__comment--standart {
   right: 295px;
   top: 17px;
   position: absolute;
   display: block;
+
+  @media (min-width: $tablet) {
+    top: 8px;
+    left: 375px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 15px;
+    left: 574px;
+  }
 }
 
-.table__mobile--smile {
-
-  right: 295px;
+.table__comment--unlim {
+  position: absolute;
+  display: block;
+  right: 140px;
   top: 18px;
-  position: absolute;
-  display: block;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 11px;
+    right: 62px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 18px;
+    left: 808px;
+  }
 }
 
-.table__mobile--comments {
+.table .table__rowheader {
+  border: 2px solid $grey;
+}
 
-  right: 297px;
-  top: 15px;
-  position: absolute;
-  display: block;
+.table td {
+  border-collapse: collapse;
+  border: 2px solid $grey;
+  background-color: $white;
+  background-clip: padding-box;
+}
+
+.table .table__none {
+  border-style: none;
+}
+
+.table__column:nth-child(2) {
+  border-top-left-radius: 3px;
+}
+
+.table__column:nth-child(3) {
+  border-left: 2px solid $grey;
+  border-right: 2px solid $grey;
+}
+
+.table__column:last-child {
+  border-top-right-radius: 3px;
 }

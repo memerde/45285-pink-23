@@ -1,11 +1,7 @@
 .footer {
   background-color: $white;
   text-align: center;
-  padding: 33px 20px 40px;
-
-  &__index {
-    padding-top: 38px;
-  }
+  padding: 33px 0 40px;
 
   &__catalog {
     padding-top: 40px;
@@ -14,10 +10,34 @@
   &__form {
     padding-top: 58px;
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 37px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 127px;
+  }
+}
+
+.footer__index {
+  padding-top: 38px;
+
+  @media (min-width: $desktop) {
+    padding: 70px 0 70px;
+  }
 }
 
 .footer__logo {
   margin: 0 0 37px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 21px 0 0;
+  }
 }
 
 .footer__social {
@@ -27,6 +47,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .footer__develop {
@@ -37,9 +61,27 @@
 
   p {
     font-size: 14px;
+
+    @media (min-width: $tablet) {
+      padding: 0 15px 0 0;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0 12px 0 0;
+      font-size: 18px;
+    }
   }
 
   svg {
     display: block;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 7px;
+    padding: 5px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }

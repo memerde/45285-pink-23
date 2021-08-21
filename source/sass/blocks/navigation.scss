@@ -21,7 +21,7 @@
   z-index: 1;
   text-transform: uppercase;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     position: static;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
   }
 
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     box-shadow: none;
     padding: 0 10px;
 
@@ -67,7 +67,7 @@
   border: none;
   top: 23px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     display: none;
   }
 }

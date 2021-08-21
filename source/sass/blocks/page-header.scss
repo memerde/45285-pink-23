@@ -1,14 +1,19 @@
 .page-header {
   margin: 0;
-  background-color: $black-op3;
-  padding: 22px 20px 21px;
+  // background-color: $pink;
+  padding: 22px 0 21px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 25px 20px;
+    min-height: 110px;
+  }
 
   img {
     display: block;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +21,9 @@
   }
 }
 
-.page-header__open-menu {
-  background-color: $dark;
-  padding: 22px 20px 24px;
-}
+
+// добавляется js-сом
+// .page-header__open-menu {
+//   background-color: $dark;
+//   padding: 22px 20px 24px;
+// }
