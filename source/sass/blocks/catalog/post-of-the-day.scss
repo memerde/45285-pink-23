@@ -1,13 +1,33 @@
 .post-of-the-day {
   background-color: $white;
   position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  a {
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
 }
 
-
 .post-of-the-day__wrapper {
-  margin: 0 20px 20px;
+  // margin: 0 20px 20px;
   padding: 18px 0 19px 18px;
   background-color: $grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 23px 30px 15px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 28px 15px;
+    margin-bottom: 50px;
+  }
 }
 
 .post-of-the-day::after {
@@ -22,4 +42,9 @@
   background-color: $pink;
   padding: 5px 20px 7px 19px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    right: 120px;
+    top: 54px;
+  }
 }

@@ -1,6 +1,14 @@
 .upload {
   padding: 5px 0 0;
   background-color: $white;
+
+  @media (min-width: $tablet) {
+    min-height: 632px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 98px;
+  }
 }
 
 .upload__heading,
@@ -12,8 +20,37 @@
   display: block;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .upload__paragraph {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 67px;
+  }
+}
+
+.upload__container {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+  }
 }

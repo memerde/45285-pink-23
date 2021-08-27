@@ -15,13 +15,16 @@
 }
 
 .contacts__map {
+  width: 100%;
+
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 374px;
+    width: 100%;
+    min-height: 370px;
   }
 
   @media (min-width: $desktop) {
     margin: 0 auto;
+    min-height: 500px;
   }
 }
 
@@ -56,6 +59,8 @@
   margin: 0 auto;
   display: inline-block;
   padding: 0;
+  z-index: 1;
+  position: relative;
 
   @media (min-width: $tablet) {
     margin: 0 29px 20px 48px;
@@ -80,7 +85,8 @@
 
 .contacts__list {
   margin: 0 0 16px;
-
+  position: relative;
+  z-index: 12;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -158,20 +164,21 @@
 .contacts__list::after {
   content: url("/img/triangle.svg");
   position: absolute;
-  left: 0;
-  top: 280px;
+  left: -20px;
+  top: 187px;
+  z-index: 0;
 
   @media (min-width: $tablet) {
     content: url("/img/triangle-t.png");
-    left: 0;
-    top: 305px;
+    left: -20px;
+    top: 163px;
     z-index: 2;
   }
 
   @media (min-width: $desktop) {
     content: url("/img/triangle-d.png");
-    top: 285px;
-    left: 0;
+    top: 110px;
+    left: -170px;
     z-index: 1;
   }
 }

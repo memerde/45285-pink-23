@@ -1,7 +1,7 @@
 .cta {
   margin: 0;
   padding: 23px 0 31px;
-  // background-color: $dark;
+  background-color: $dark;
   min-height: 667px;
 
   @media (min-width: $tablet) {
@@ -20,6 +20,7 @@
   display: flex;
   min-height: 613px;
   flex-direction: column;
+  position: relative;
 
 
   @media (min-width: $tablet) {
@@ -63,6 +64,7 @@
 }
 
 .cta__img {
+  display: block;
   position: absolute;
   left: 0;
   top: 87px;
