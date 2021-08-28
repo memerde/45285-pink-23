@@ -30,21 +30,21 @@
   }
 }
 
-.post-of-the-day::after {
-  content: "Панорама дня";
-  position: absolute;
-  right: 20px;
-  top: 0;
-  color: $white;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  background-color: $pink;
-  padding: 5px 20px 7px 19px;
-  text-transform: uppercase;
+// .post-of-the-day::after {
+//   content: "Панорама дня";
+//   position: absolute;
+//   right: 20px;
+//   top: 0;
+//   color: $white;
+//   font-weight: 700;
+//   font-size: 12px;
+//   line-height: 24px;
+//   background-color: $pink;
+//   padding: 5px 20px 7px 19px;
+//   text-transform: uppercase;
 
-  @media (min-width: $desktop) {
-    right: 120px;
-    top: 54px;
-  }
-}
+//   @media (min-width: $desktop) {
+//     right: 120px;
+//     top: 54px;
+//   }
+// }

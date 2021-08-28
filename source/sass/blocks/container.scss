@@ -15,22 +15,31 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    // padding-left: 130px;
-    // padding-right: 130px;
-    // width: 1200px;
+    // padding: 0;
+    // margin: 0;
+    // width: 100%;
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
-.container__desktop-catalog {
+.container--reset {
   @media (min-width: $desktop) {
-    width: 1200px;
-    margin: 0 auto 90px;
-    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
+
+// .container__desktop-catalog {
+//   @media (min-width: $desktop) {
+//     width: 1200px;
+//     margin: 0 auto 90px;
+//     text-align: center;
+//   }
+// }
 
 .container--oftheday {
   @media (min-width: $desktop) {

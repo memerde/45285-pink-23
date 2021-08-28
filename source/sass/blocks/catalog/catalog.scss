@@ -7,16 +7,16 @@
   padding-top: 79px;
   background-image: url("/img/back-mobile.png");
   min-height: 241px;
+  text-align: center;
 
   @media (min-width: $tablet) {
-    margin-top: -110px;
     padding-top: 135px;
-    margin-bottom: 90px;
     min-height: 440px;
+    margin: -110px auto 90px;
   }
 
   @media (min-width: $desktop) {
-    margin: -110px auto 10px;
+    margin: -110px auto 90px;
     padding: 169px 0 0;
     min-height: 394px;
   }
@@ -30,17 +30,19 @@
   font-weight: 300;
   margin-bottom: 43px;
   color: $white;
+  width: 172px;
 
   @media (min-width: $tablet) {
     font-size: 50px;
     line-height: 68px;
     margin-bottom: 60px;
+    width: 360px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto 89px;
+    // margin: 0 auto 89px;
     text-align: center;
-    padding: 0 300px;
+    margin: 0;
   }
 }
 
@@ -78,6 +80,25 @@
 
   @media (min-width: $desktop) {
     height: 506px;
+  }
+}
+
+.catalog__img-of-the-day::after {
+  content: "Панорама дня";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: $pink;
+  padding: 5px 20px 7px 19px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    right: 120px;
+    top: 54px;
   }
 }
 

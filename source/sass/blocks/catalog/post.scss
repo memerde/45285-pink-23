@@ -131,6 +131,11 @@
     position: absolute;
     right: -170px;
   }
+
+  @media (min-width: $desktop) {
+    left: 105px;
+    top: 1px;
+  }
 }
 
 .post__image {
