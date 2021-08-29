@@ -29,5 +29,13 @@
 // }
 
 .page-header__logo {
-  display: block;
+  @media (min-width: $tablet) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 147px;
+    height: 40px;
+  }
 }

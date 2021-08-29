@@ -40,6 +40,11 @@
     padding-top: 128px;
     margin-bottom: 90px;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/back-desktop.png");
+    background-size: cover;
+  }
 }
 
 .form__header {

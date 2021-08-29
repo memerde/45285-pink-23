@@ -13,28 +13,29 @@
   }
 }
 
-.editor__wrapper {
-  width: 320px;
-  padding: 22px 20px 34px;
-  margin: 0 auto;
+// .editor__wrapper {
+//   width: 320px;
+//   padding: 22px 20px 34px;
+//   margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    width: 660px;
-    display: grid;
-    grid-template-columns: 300px 260px;
-    grid-template-rows: min-content min-content;
-    padding: 22px 20px 54px;
-    column-gap: 45px;
-    // min-height: 400px;
-  }
+//   @media (min-width: $tablet) {
+//     width: 660px;
+//     display: grid;
+//     grid-template-columns: 300px 260px;
+//     grid-template-rows: min-content min-content;
+//     padding: 22px 20px 54px;
+//     column-gap: 45px;
+//     // min-height: 400px;
+//   }
 
-  @media (min-width: $desktop) {
-    width: 100%;
-    padding: 19px 60px 32px 80px;
-    grid-template-columns: 1fr 410px;
-    column-gap: 0;
-  }
-}
+//   @media (min-width: $desktop) {
+//     width: 100%;
+//     padding: 19px 60px 32px 80px;
+//     grid-template-columns: 1fr 410px;
+//     column-gap: 0;
+//   }
+// }
+
 // !---------------------------------WRAPPER___FOR___TOOLS_LIST___&___ICON_LIST
 .editor__tools-wrapper {
   display: flex;
@@ -189,9 +190,17 @@
   }
 }
 
-.editor__image {
+.editor__picture {
   grid-column: 1/2;
   grid-row: 1/-1;
+}
+
+.editor__image {
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
 }
 // !---------------------------------CROP___БЛОК___ПОЛОСКА___КРУГЛЯШ
 .editor__range--crop {

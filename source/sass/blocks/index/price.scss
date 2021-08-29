@@ -1,24 +1,15 @@
 .price {
   padding: 102px 0 45px;
   margin: 0;
-  // background-image: url("/img/grey-background2.png");
-  // background-repeat: no-repeat;
   min-height: 457px;
   position: relative;
-  // background: linear-gradient(175.2deg, transparent 41%, $grey-bg 41.1%);
-
-  // background-color: $grey-bg;
-  // clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+  background: linear-gradient(177deg, transparent 4.8%, $grey-bg 4.9%);
 
   @media (min-width: $tablet) {
     padding: 98px 0 0;
     margin: 0;
-    // background-position: 0 0;
-    // background-size: cover;
-    // background-image: url("/img/grey-background-price-t.png");
-    // background-color: $grey-bg;
+    background: linear-gradient(177deg, transparent 9.8%, $grey-bg 9.9%);
     min-height: 386px;
-    // clip-path: polygon(0 10.7%, 100% 0, 100% 100%, 0% 100%);
   }
 
   @media (min-width: $desktop) {

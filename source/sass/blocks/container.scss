@@ -4,9 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 320px;
-  // z-index: 2;
-  // outline: 1px solid $pink;
-  // background-color: wheat;
 
   @media (min-width: $tablet) {
     padding-left: 20px;
@@ -15,13 +12,9 @@
   }
 
   @media (min-width: $desktop) {
-    // padding: 0;
-    // margin: 0;
-    // width: 100%;
     padding-left: 130px;
     padding-right: 130px;
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -33,34 +26,75 @@
   }
 }
 
-// .container__desktop-catalog {
-//   @media (min-width: $desktop) {
-//     width: 1200px;
-//     margin: 0 auto 90px;
-//     text-align: center;
-//   }
-// }
+.container__cta {
+  position: relative;
+}
+
+.container__cta--reset {
+  margin: 0;
+  width: 100%;
+}
+
+.container--editor {
+  padding: 22px 20px 34px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 300px 260px;
+    grid-template-rows: min-content min-content;
+    padding-bottom: 54px;
+    column-gap: 45px;
+    // min-height: 400px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    padding: 19px 60px 32px 80px;
+    grid-template-columns: 1fr 410px;
+    column-gap: 0;
+  }
+}
 
 .container--oftheday {
+  width: 320px;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+  }
+
   @media (min-width: $desktop) {
     width: 1200px;
-    padding: 0 130px;
-    margin: 0 auto;
+  }
+}
+
+.container--oftheday::after {
+  content: "Панорама дня";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: $pink;
+  padding: 5px 20px 7px 19px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 130px;
+    // top: 54px;
+    top: 55px;
   }
 }
 
 .container__index {
   position: relative;
-
-  @media (min-width: $desktop) {
-    // padding: 0;
-    // margin: 0;
-    // width: 100%;
-    padding-left: 130px;
-    padding-right: 130px;
-    width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 .container__nav {
@@ -84,12 +118,9 @@
   }
 
   @media (min-width: $desktop) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    width: 1200px;
-    margin: 0 auto 12px;
-    padding: 0 130px;
+    // width: 1200px;
+    margin-bottom: 12px;
     row-gap: 54px;
   }
 }
