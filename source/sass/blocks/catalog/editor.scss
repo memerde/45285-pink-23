@@ -1,6 +1,67 @@
 .editor {
-  padding: 22px 20px 34px;
-  background-color: $grey;
+  background-color: $lightgrey;
+
+  @media (min-width: $tablet) {
+    padding-top: 35px;
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 514px;
+  }
+}
+
+// .editor__wrapper {
+//   width: 320px;
+//   padding: 22px 20px 34px;
+//   margin: 0 auto;
+
+//   @media (min-width: $tablet) {
+//     width: 660px;
+//     display: grid;
+//     grid-template-columns: 300px 260px;
+//     grid-template-rows: min-content min-content;
+//     padding: 22px 20px 54px;
+//     column-gap: 45px;
+//     // min-height: 400px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     width: 100%;
+//     padding: 19px 60px 32px 80px;
+//     grid-template-columns: 1fr 410px;
+//     column-gap: 0;
+//   }
+// }
+
+// !---------------------------------WRAPPER___FOR___TOOLS_LIST___&___ICON_LIST
+.editor__tools-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    // grid-column: 2/3;
+    // grid-row: 1/2;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: -5px;
+    margin-bottom: 80px;
+  }
+}
+// !---------------------------------ICON_LIST
+.editor__item {
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .editor__icon-list {
@@ -10,11 +71,48 @@
   margin: 38px 35px 34px;
   padding: 0;
   align-items: center;
-}
+  position: relative;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    height: 162px;
+    // padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 185px;
+    margin-right: 40px;
+  }
+}
+// !---------------------------------SVG
 .editor__tool-button {
   background-color: transparent;
   border: none;
+}
+
+// .editor__svg {
+//   @media (min-width: $tablet) {
+//     width: 25px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     width: 32px;
+//   }
+// }
+
+.editor__svg path {
+  @media (min-width: $tablet) {
+    fill: $pink;
+  }
+}
+
+.editor__svg g {
+  @media (min-width: $tablet) {
+    opacity: 1;
+  }
 }
 
 .editor__svg:hover g {
@@ -26,19 +124,112 @@
 }
 
 .editor__tools-list,
-.editpr__range {
+.editor__range {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.editor__tools-list {
-  margin-bottom: 75px;
+.editor__range {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
 }
 
+.editor__tool-button--crop svg {
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 25px;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+  }
+}
+
+.editor__tool-button--fill svg {
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 25px;
+    position: absolute;
+    left: 3px;
+    top: 72px;
+  }
+}
+
+.editor__tool-button--contrast svg {
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 17px;
+    position: absolute;
+    left: 7px;
+    top: 149px;
+  }
+}
+// !---------------------------------TOOLS_LIST
+.editor__tools-list {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    margin-bottom: 30px;
+    width: 202px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-right: 4px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 22px;
+    width: 288px;
+    margin-right: 0;
+  }
+}
+
+.editor__picture {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.editor__image {
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
+}
+// !---------------------------------CROP___БЛОК___ПОЛОСКА___КРУГЛЯШ
 .editor__range--crop {
   position: relative;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.editor__range--crop::after {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 1px;
+    top: 36px;
+    left: -60px;
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    width: 411px;
+    top: 36px;
+    left: -92px;
+  }
 }
 
 .editor__track--crop {
@@ -57,11 +248,155 @@
   left: 213px;
   top: -5px;
   border: 2px solid $pink;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $pink;
+    left: 160px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 235px;
+  }
 }
 
-.editor__range--fill,
-.editor__range--contrast {
+// .editor__range--fill,
+// .editor__range--contrast {
+//   display: none;
+// }
+
+// !---------------------------------FILL___БЛОК___ПОЛОСКА___КРУГЛЯШ
+.editor__range--fill {
   display: none;
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    display: block;
+  }
+}
+
+.editor__range--fill::after {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 1px;
+    top: 36px;
+    left: -60px;
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    width: 411px;
+    top: 36px;
+    left: -92px;
+  }
+}
+
+.editor__track--fill {
+  width: 100%;
+  height: 2px;
+  background-color: $dark;
+  margin: 0 0 50px;
+}
+
+.editor__thumb--fill {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  left: 213px;
+  top: -45px;
+  border: 2px solid $pink;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $pink;
+    left: 22px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 35px;
+  }
+}
+// !---------------------------------CONTRAST___БЛОК___ПОЛОСКА___КРУГЛЯШ
+.editor__range--contrast {
+  position: relative;
+  padding: 0 20px;
+  display: none;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    display: block;
+  }
+}
+
+.editor__range--contrast::after {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 1px;
+    top: 36px;
+    left: -60px;
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.editor__track--contrast {
+  width: 100%;
+  height: 2px;
+  background-color: $dark;
+  margin: 0 0 50px;
+}
+
+.editor__thumb--contrast {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  left: 213px;
+  top: -45px;
+  border: 2px solid $pink;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $pink;
+    left: 92px;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 137px;
+  }
+}
+// !---------------------------------БЛОК С КНОПКАМИ
+.editor__wrapper-btn {
+  @media (min-width: $tablet) {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    padding: 0;
+    align-self: end;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 410px;
+    // flex-direction: row;
+    // width: 410px;
+  }
 }
 
 .editor__button {
@@ -70,9 +405,35 @@
   width: 100%;
   margin: 0 0 10px;
   background-color: transparent;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 16px 39px;
+    width: min-content;
+  }
+}
+
+.editor__button:last-child {
+  margin-bottom: 0;
 }
 
 .editor__button--active {
   color: $pink;
   border: 3px solid $pink;
+}
+
+.editor__button--cancel {
+  color: $blue-op;
+  border: 3px solid $blue-op;
+  width: 100%;
+  margin: 0 0 10px;
+  background-color: transparent;
+
+  @media (min-width: $desktop) {
+    padding: 16px 50px;
+    width: min-content;
+  }
 }

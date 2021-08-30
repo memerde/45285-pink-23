@@ -1,0 +1,8 @@
+.desktop-container {
+  @media (min-width: $desktop) {
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

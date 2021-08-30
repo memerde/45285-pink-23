@@ -85,6 +85,8 @@
   @media (min-width: $tablet) {
     grid-column: 2/-1;
     grid-row: 3/4;
+    color: $pink;
+    font-size: 14px;
   }
 
   @media (min-width: $desktop) {

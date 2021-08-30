@@ -1,10 +1,40 @@
 .post {
-  background-color: $grey;
-  margin: 0 20px 20px;
+  background-color: $lightgrey;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    min-height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 555px;
+    margin: 0;
+  }
 }
 
 .post__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 19px 18px 18px;
+
+  @media (min-width: $tablet) {
+    padding: 22px 30px 25px;
+    height: 100%;
+    // min-height: 262px;
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 27px 25px;
+    min-height: 155px;
+    // min-height: 262px;
+    // display: flex;
+    // flex-direction: column;
+  }
 }
 
 // .post__margin {
@@ -35,11 +65,16 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .post__hit {
   padding: 0;
-  margin: 0;
   border: none;
   text-transform: uppercase;
   color: $pink;
@@ -47,12 +82,69 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 30px;
+  // margin-left: 30px;
   position: relative;
+  text-align: left;
+  margin: auto 0 0 30px;
+
+  @media (min-width: $tablet) {
+    margin: auto 0 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: auto 0 0 0;
+  }
 }
 
 .post__hit::before {
   content: url("/img/heart.svg");
   position: absolute;
   left: -31px;
+
+  @media (min-width: $tablet) {
+    top: 2px;
+    left: 227px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 227px;
+  }
+}
+
+.post__hit--oftheday {
+  @media (min-width: $tablet) {
+    position: absolute;
+    right: 60px;
+    top: 24px;
+  }
+}
+
+// .post--oftheday {
+//   @media (min-width: $tablet) {
+//     position: relative;
+//   }
+// }
+
+.post__hit--oftheday::before {
+  @media (min-width: $tablet) {
+    content: url("/img/heart.svg");
+    position: absolute;
+    left: 106px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 105px;
+    top: 1px;
+  }
+}
+
+.post__image {
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
 }

@@ -43,12 +43,13 @@
     color: $white;
     text-decoration: none;
     font-weight: 700;
+    border: 2px solid transparent;
   }
-
 
   @media (min-width: $desktop) {
     box-shadow: none;
-    padding: 0 10px;
+    padding: 0;
+    margin: 0;
 
     a {
       color: $white;
@@ -60,12 +61,29 @@
   }
 }
 
+.navigation__item:not(:last-child) {
+  @media (min-width: $desktop) {
+    margin-right: 75px;
+  }
+}
+
+.navigation__item a:hover {
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $white;
+  }
+}
+
 .navigation__toggle {
+  content: "";
   position: absolute;
   right: 20px;
   background-color: transparent;
   border: none;
   top: 23px;
+
+  @media (min-width: $tablet) {
+    right: 160px;
+  }
 
   @media (min-width: $desktop) {
     display: none;
