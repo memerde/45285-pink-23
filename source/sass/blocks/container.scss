@@ -55,18 +55,25 @@
   }
 }
 
+// .container--oftheday {
+//   width: 320px;
+//   padding: 0;
+//   position: relative;
+
+//   @media (min-width: $tablet) {
+//     width: 660px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     width: 1200px;
+//   }
+// }
+
 .container--oftheday {
-  width: 320px;
+  width: 100%;
   padding: 0;
   position: relative;
-
-  @media (min-width: $tablet) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1200px;
-  }
+  margin: 0;
 }
 
 .container--oftheday::after {
@@ -98,15 +105,27 @@
 }
 
 .container__nav {
+  margin: 0 auto;
+  width: 320px;
+  // padding: 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+  }
+
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-left: 130px;
+    // padding-right: 130px;
+    // width: 1200px;
+    // margin: 0 auto;
+    // position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 

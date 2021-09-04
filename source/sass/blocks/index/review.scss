@@ -22,7 +22,7 @@
 .review__quote {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -40,10 +40,41 @@
     margin: 0 auto;
     padding: 0 120px;
     min-height: 200px;
+    flex-direction: row;
   }
 }
 
-.review__quote::after {
+.review__button {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.review__button:hover path {
+  fill: $dark-op6;
+  opacity: 1;
+}
+
+.review__button:active path {
+  fill: $dark-op1;
+  opacity: 1;
+}
+
+.review__button--back {
+  left: -3px;
+  top: 28px;
+}
+
+.review__button--next {
+  right: -3px;
+  top: 28px;
+}
+
+.review__author-name::after {
   @media (min-width: $desktop) {
     content: url("/img/quotes.svg");
     position: absolute;
@@ -52,12 +83,18 @@
   }
 }
 
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .review__author-name {
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
   text-align: center;
   display: block;
+  margin: 0 0 17px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -100,7 +137,6 @@
   padding: 0;
   margin: 0;
 
-
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 30px;
@@ -118,20 +154,5 @@
     display: flex;
     flex-direction: column;
     order: 2;
-  }
-}
-
-.review__slider-dots {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 110px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    margin: 0 187px;
-  }
-
-  @media (min-width: $desktop) {
-    display: none;
   }
 }

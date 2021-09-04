@@ -208,3 +208,13 @@
     display: block;
   }
 }
+
+
+.contacts__type--email:hover {
+  color: $dark;
+  text-decoration: underline;
+}
+
+.contacts__type--email:active {
+  color: $dark-op3;
+}

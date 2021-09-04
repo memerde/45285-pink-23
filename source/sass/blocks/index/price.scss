@@ -29,13 +29,29 @@
   }
 }
 
-.price__slider-dots {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 126px;
-  margin: 0 auto;
+// .price__slider-dots {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 126px;
+//   margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
+//   @media (min-width: $tablet) {
+//     display: none;
+//   }
+// }
+
+// .price__slider-dots {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 113px 0 109px;
+//   margin: 0 auto;
+//   align-items: center;
+
+//   @media (min-width: $tablet) {
+//     display: none;
+//   }
+
+//   @media (min-width: $desktop) {
+//     display: none;
+//   }
+// }

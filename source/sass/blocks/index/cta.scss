@@ -1,28 +1,43 @@
 .cta {
-  padding: 90px 0 0;
-  min-height: 733px;
+  padding: 93px 0 0;
+  min-height: 737px;
   background-image: url("/img/back-mobile.png");
   background-size: cover;
-  margin: -66px auto 0;
+  margin: -70px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/back-mobile2x.png");
+    background-position: center 0;
+    // background-size: cover;
+  }
 
   @media (min-width: $tablet) {
+    background-image: url("/img/back-tablet.png");
     padding: 175px 0 0;
-    margin: -110px auto 0;
+    margin: -113px auto 0;
     min-height: 729px;
     display: block;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/back-tablet2x.png");
+    }
   }
 
   @media (min-width: $desktop) {
     padding: 180px 0 0;
     min-height: 853px;
-  }
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    margin: -110px auto 0;
     background-image: url("/img/back-desktop.png");
-    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/back-desktop2x.png");
+    }
   }
 }
 
@@ -75,7 +90,6 @@
   font-size: 24px;
   line-height: 120%;
   color: $white;
-  width: 287px;
 
   @media (min-width: $tablet) {
     margin: 0 auto 31px;
@@ -106,10 +120,10 @@
 }
 
 .cta__img {
-  display: block;
+  // display: block;
   position: absolute;
   left: 0;
-  top: 87px;
+  top: 88px;
 
   @media (min-width: $tablet) {
     left: 0;
@@ -121,7 +135,7 @@
 
   @media (min-width: $desktop) {
     left: 146px;
-    top: 28px;
+    top: -2px;
     width: 1050px;
     height: 645px;
   }
@@ -140,6 +154,16 @@
     margin-bottom: 69px;
     font-size: 21px;
   }
+}
+
+.cta__button:hover {
+  background-color: $white;
+  color: $pink;
+  box-shadow: 0 5px 7px 0 rgba(1, 1, 1, 0.75);
+}
+
+.cta__button:active {
+  color: $pink-op3;
 }
 
 .cta__market-wrapper {
