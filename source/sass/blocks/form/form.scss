@@ -20,24 +20,20 @@
 }
 
 .form__container {
-  margin-top: -70px;
-
   z-index: 0;
   background-color: $dark;
   position: relative;
   background-size: cover;
-  padding-top: 79px;
+  padding-top: 74px;
   background-image: url("/img/back-mobile.png");
 
   @media (min-width: $tablet) {
-    margin-top: -110px;
     padding-top: 135px;
     margin-bottom: 90px;
     background-image: url("/img/back-tablet.png");
   }
 
   @media (min-width: $desktop) {
-    margin-top: -110px;
     padding-top: 128px;
     margin-bottom: 90px;
     background-image: url("/img/back-desktop.png");
@@ -513,6 +509,31 @@
   outline: none;
 }
 
+.form__input:hover ~ .form__contact-button {
+  background-color: $black;
+}
+
+.form__input:focus ~ .form__contact-button {
+  background-color: $pink;
+}
+
+.form__contact-button:hover {
+  background-color: $black;
+}
+
+.form__input:active ~ .form__contact-button {
+  background-color: $pink;
+}
+
+.form__input:active + .form__contact-button path {
+  fill: $white;
+}
+
+.form__input:focus + .form__contact-button path {
+  fill: $white;
+}
+
+
 .form__input:active {
   border: 2px solid $pink;
   outline: none;
@@ -563,10 +584,6 @@
 .form__legend--colored {
   background-color: $lightgrey;
 }
-
-// .form__label-radio {
-//   margin: 0;
-// }
 
 .form__label-radio:not(:last-child) {
   margin: 0 0 40px;

@@ -116,6 +116,13 @@
   }
 }
 
+.proof__link:hover {
+  color: $black;
+}
+
+.proof__link:active {
+  color: $pink-op3;
+}
 // .proof__img-desktop {
 //   display: none;
 

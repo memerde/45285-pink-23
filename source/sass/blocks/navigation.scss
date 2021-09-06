@@ -1,18 +1,23 @@
 .navigation {
+  display: block;
+}
+
+.navigation--toggle {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .navigation__list,
 .navigation__item {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .navigation__list {
-  position: absolute;
-  left: 0;
-  top: 70px;
   width: 100%;
   background-color: $dark;
   font-size: 18px;
@@ -34,7 +39,7 @@
     text-transform: none;
     font-size: 18px;
     font-weight: 400;
-    padding-top: 12px;
+    padding-top: 11px;
   }
 }
 
@@ -64,11 +69,6 @@
       padding: 0;
       margin: 0;
     }
-
-    // &:hover {
-    //   padding-bottom: 10px;
-    //   border-bottom: 2px solid $white;
-    // }
   }
 }
 
@@ -82,7 +82,6 @@
   color: $pink-op3;
 
   @media (min-width: $desktop) {
-    // border-bottom: 1px solid $white;
     color: $white-op3;
   }
 }

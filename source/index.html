@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
@@ -17,9 +17,12 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header__open-menu">
-    <div class="page-header--container">
+  <header class="page-header page-header--nojs page-header--no-opacity">
+
+    <div class="page-header__container">
+
       <div class="container container__nav">
+
         <a class="page-header__logo">
           <svg class="page-header__svg" width="74" height="23">
             <use xlink:href="/img/sprite.svg#logo-mobile"></use>
@@ -27,6 +30,7 @@
             <use xlink:href="/img/sprite.svg#logo-desktop"></use>
           </svg>
         </a>
+
         <button class="page-header__close" type="button">
           <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -60,23 +64,33 @@
 
   <main class="main">
     <section class="cta">
-      <div class="container container__cta">
-        <h2 class="cta__heading cta__heading--top">Взгляните на жизнь иначе!</h2>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="/img/hand-d.png">
-          <source media="(min-width: 660px)" srcset="/img/hand-t.png">
-          <img class="cta__img" src="/img/hand-m.png" alt="Рука с телефоном и приложением Пинк" width="320"
-            height="286">
-        </picture>
+      <div class="cta__bg">
+
+        <div class="container container__cta">
+
+          <h2 class="cta__heading cta__heading--top">Взгляните на жизнь иначе!</h2>
+          <div class="cta__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/hand-d.png">
+              <source media="(min-width: 660px)" srcset="/img/hand-t.png">
+              <img class="cta__img" src="/img/hand-m.png" alt="Рука с телефоном и приложением Пинк" width="320"
+                height="286">
+            </picture>
+          </div>
+        </div>
       </div>
 
-      <div class="cta__container cta__container--tab">
-        <div class="cta__bgblock">
-          <div class="cta__container cta__container--mob">
+      <div class="container container__cta--reset">
+
+        <div class="cta__container0">
+
+          <div class="container container__cta--reset-tablet container__cta--reset-desktop">
+
             <h2 class="cta__heading cta__heading--bottom">Взгляните на жизнь иначе!</h2>
             <a href="https://www.apple.com/ru/app-store/" class="cta__button button">
               Скачать приложение
             </a>
+
             <ul class="cta__market-wrapper">
               <li>
                 <a href="https://www.apple.com/ru/app-store/" class="cta__market cta__market--apple">
@@ -101,6 +115,9 @@
             </p>
           </div>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -407,6 +424,7 @@
   </main>
 
   <footer class="footer">
+
     <div class="footer__index">
 
       <a href="index.html" class="footer__logo">
@@ -464,6 +482,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
