@@ -1,29 +1,38 @@
 .catalog__container {
-  margin-top: -70px;
+  // margin-top: -70px;
   z-index: 0;
   background-color: $dark;
   position: relative;
   background-size: cover;
-  padding-top: 79px;
+  padding-top: 75px;
   background-image: url("/img/back-mobile.png");
-  min-height: 241px;
+  min-height: 237px;
   text-align: center;
 
   @media (min-width: $tablet) {
     padding-top: 135px;
     min-height: 440px;
-    margin: -110px auto 90px;
+    margin: 0 auto 90px;
+    background-image: url("/img/back-tablet.png");
   }
 
   @media (min-width: $desktop) {
-    margin: -110px auto 90px;
     padding: 169px 0 0;
     min-height: 394px;
+    background-image: url("/img/back-desktop.png");
   }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("/img/back-desktop.png");
-    background-size: cover;
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("/img/back-mobile2x.png");
+    background-position: center 0;
+
+    @media (min-width: $tablet) {
+      background-image: url("/img/back-tablet2x.png");
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("/img/back-desktop2x.png");
+    }
   }
 }
 
@@ -73,19 +82,25 @@
   }
 }
 
+// .catalog__img-of-the-day {
+//   width: 100%;
+//   display: block;
+//   // position: relative;
+//   margin: 0 auto;
+
+//   @media (min-width: $tablet) {
+//     height: 509px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     // height: 506px;
+//   }
+// }
+
 .catalog__img-of-the-day {
   width: 100%;
   display: block;
-  // position: relative;
   margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    height: 509px;
-  }
-
-  @media (min-width: $desktop) {
-    height: 506px;
-  }
 }
 
 .catalog__link {

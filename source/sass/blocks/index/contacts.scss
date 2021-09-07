@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  padding: 40px 0 0;
+  padding: 43px 0 0;
   margin: 0;
   text-align: center;
 
@@ -172,14 +172,12 @@
     content: url("/img/triangle-t.png");
     left: -20px;
     top: 163px;
-    z-index: 2;
   }
 
   @media (min-width: $desktop) {
     content: url("/img/triangle-d.png");
     top: 110px;
     left: -170px;
-    z-index: 1;
   }
 }
 
@@ -207,4 +205,14 @@
   @media (min-width: $desktop) {
     display: block;
   }
+}
+
+
+.contacts__type--email:hover {
+  color: $dark;
+  text-decoration: underline;
+}
+
+.contacts__type--email:active {
+  color: $dark-op3;
 }

@@ -1,15 +1,15 @@
 .price {
-  padding: 102px 0 45px;
+  padding: 138px 0 45px;
   margin: 0;
   min-height: 457px;
   position: relative;
-  background: linear-gradient(177deg, transparent 4.8%, $grey-bg 4.9%);
+  background: linear-gradient(176deg, transparent 10.8%, $grey-bg 10.9%);
 
   @media (min-width: $tablet) {
-    padding: 98px 0 0;
+    padding: 111px 0 0;
     margin: 0;
-    background: linear-gradient(177deg, transparent 9.8%, $grey-bg 9.9%);
-    min-height: 386px;
+    background: linear-gradient(176deg, transparent 12.8%, $grey-bg 12.9%);
+    min-height: 400px;
   }
 
   @media (min-width: $desktop) {
@@ -29,13 +29,29 @@
   }
 }
 
-.price__slider-dots {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 126px;
-  margin: 0 auto;
+// .price__slider-dots {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 126px;
+//   margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
+//   @media (min-width: $tablet) {
+//     display: none;
+//   }
+// }
+
+// .price__slider-dots {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 113px 0 109px;
+//   margin: 0 auto;
+//   align-items: center;
+
+//   @media (min-width: $tablet) {
+//     display: none;
+//   }
+
+//   @media (min-width: $desktop) {
+//     display: none;
+//   }
+// }

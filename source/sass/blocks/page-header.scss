@@ -1,41 +1,189 @@
+// .page-header {
+//   margin: 0;
+//   background-color: $black-op3;
+//   padding: 21px 0 19px;
+//   position: relative;
+//   z-index: 2;
+
+//   @media (min-width: $tablet) {
+//     padding: 27px 0 0;
+//     min-height: 110px;
+//   }
+
+//   img {
+//     display: block;
+//   }
+
+//   @media (min-width: $desktop) {
+//     &--container {
+//       width: 1200px;
+//       margin: 0 auto;
+//       padding: 0 130px;
+//       display: flex;
+//       justify-content: space-between;
+//       flex-direction: row;
+//     }
+//   }
+// }
+
 .page-header {
-  margin: 0;
-  background-color: $black-op3;
-  padding: 22px 0 21px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 2;
+  background-color: $black-op3;
+}
 
-  @media (min-width: $tablet) {
-    padding: 25px 20px;
-    min-height: 110px;
-  }
-
-  img {
-    display: block;
-  }
+.page-header--no-opacity {
+  background-color: $dark;
 
   @media (min-width: $desktop) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    padding: 36px 0 0;
+    background-color: $black-op3;
   }
 }
 
-// добавляется js-сом
+// ! NOJS HERE
+.page-header--nojs {
+  position: relative;
+
+  @media (min-width: $desktop) {
+    background-color: $black-op3;
+  }
+}
+// ! NOJS ^__^
+
+.page-header__container {
+  @media (min-width: $desktop) {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 27px 130px 0;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 110px;
+  }
+}
+// .page-header__logo {
+//   width: 74px;
+//   height: 23px;
+
+//   @media (min-width: $tablet) {
+//     width: 145px;
+//     height: 40px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     width: 147px;
+//     height: 40px;
+//   }
+// }
+
+// .page-header__logo svg:hover {
+//   fill: $pink;
+// }
+
+// .page-header__link {
+//   display: block;
+//   width: max-content;
+// }
+
+.page-header__close:hover path {
+  fill: $pink;
+}
+
+.page-header__close:active path {
+  fill: $pink-op3;
+}
+
+//! добавляется js-сом
+
 // .page-header__open-menu {
 //   background-color: $dark;
 //   padding: 22px 20px 24px;
+//   box-shadow: 0 1px 0 $black;
+
+//   @media (min-width: $tablet) {
+//     padding: 27px 20px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     background-color: transparent;
+//     padding: 26px 20px 24px;
+//     box-shadow: none;
+//   }
 // }
 
-.page-header__logo {
-  @media (min-width: $tablet) {
-    width: 145px;
-    height: 40px;
-  }
+//!------------------------------
+
+.page-header__close {
+  // content: "";
+  // position: absolute;
+  // top: -1px;
+  // left: 246px;
+  background-color: transparent;
+  border: none;
+  margin-right: -3px;
+
+  // @media (min-width: $tablet) {
+  //   padding-top: 5px;
+  // }
 
   @media (min-width: $desktop) {
-    width: 147px;
-    height: 40px;
+    display: none;
   }
+}
+
+// ! логотип и все его состояния
+
+.page-header__logo {
+  display: inline;
+  fill: $white;
+
+  use:nth-child(2) {
+    display: none;
+  }
+
+  use:last-child {
+    display: none;
+  }
+
+  @media (min-width: 660px) {
+    svg {
+      width: 145px;
+      height: 40px;
+    }
+
+    use:first-child {
+      display: none;
+    }
+
+    use:nth-child(2) {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    svg {
+      width: 147px;
+    }
+
+    use:nth-child(2) {
+      display: none;
+    }
+
+    use:last-child {
+      display: inline-block;
+    }
+  }
+}
+
+.page-header__logo:hover svg {
+  fill: $pink;
+}
+
+.page-header__logo:active svg {
+  fill: $white;
+  opacity: 0.3;
 }

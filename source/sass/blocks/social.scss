@@ -44,3 +44,16 @@
 .social__link-youtube {
   padding-left: 5px;
 }
+
+
+.social__item a:hover {
+  border: 3px solid $dark;
+}
+
+.social__item:active a {
+  border: 3px solid $dark-op1;
+}
+
+.social__item:active path {
+  fill: $pink-op3;
+}

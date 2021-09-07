@@ -1,18 +1,23 @@
 .navigation {
+  display: block;
+}
+
+.navigation--toggle {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .navigation__list,
 .navigation__item {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .navigation__list {
-  position: absolute;
-  left: 0;
-  top: 69px;
   width: 100%;
   background-color: $dark;
   font-size: 18px;
@@ -21,55 +26,69 @@
   z-index: 1;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    top: 111px;
+  }
+
   @media (min-width: $desktop) {
     position: static;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     background: none;
     text-transform: none;
     font-size: 18px;
     font-weight: 400;
+    padding-top: 11px;
   }
 }
 
-.navigation__item {
+.navigation__item a {
+  color: $white;
+  text-decoration: none;
   display: block;
-  box-shadow: 0 1px 0 $black, inset 0 2px 0 $black-op15;
+  box-shadow: 0 1px 0 $white-op15 inset, 0 -1px 0 $black inset;
+  font-weight: 700;
+  padding: 15px 0 17px;
 
-  a {
-    padding: 20px 0;
-    display: block;
-    color: $white;
-    text-decoration: none;
-    font-weight: 700;
-    border: 2px solid transparent;
+  &:hover {
+    color: $pink;
   }
 
   @media (min-width: $desktop) {
     box-shadow: none;
-    padding: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid transparent;
     margin: 0;
+    width: max-content;
+    font-weight: 400;
 
     a {
       color: $white;
       text-decoration: none;
-      font-weight: 400;
       padding: 0;
       margin: 0;
     }
   }
 }
 
-.navigation__item:not(:last-child) {
+.navigation__item .navigation__current {
   @media (min-width: $desktop) {
-    margin-right: 75px;
+    border-bottom: 2px solid $white;
   }
 }
 
-.navigation__item a:hover {
+.navigation__item a:active {
+  color: $pink-op3;
+
   @media (min-width: $desktop) {
-    border-bottom: 2px solid $white;
+    color: $white-op3;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  @media (min-width: $desktop) {
+    margin-right: 79px;
   }
 }
 

@@ -50,7 +50,6 @@
   }
 }
 
-
 .proof__br-desktop {
   display: none;
 
@@ -107,15 +106,8 @@
   }
 
   @media (min-width: $desktop) {
-    display: none;
-  }
-}
-
-.proof__img-desktop {
-  display: none;
-
-  @media (min-width: $desktop) {
-
+    width: 298px;
+    height: 345px;
     position: absolute;
     left: 0;
     top: -90px;
@@ -123,3 +115,24 @@
     display: block;
   }
 }
+
+.proof__link:hover {
+  color: $black;
+}
+
+.proof__link:active {
+  color: $pink-op3;
+}
+// .proof__img-desktop {
+//   display: none;
+
+//   @media (min-width: $desktop) {
+//     width: 298px;
+//     height: 345px;
+//     position: absolute;
+//     left: 0;
+//     top: -90px;
+//     z-index: 1;
+//     display: block;
+//   }
+// }

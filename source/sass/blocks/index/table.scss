@@ -1,6 +1,6 @@
 .table {
-  translate: -280px;
-  width: 834px;
+  translate: -480px;
+  width: 1034px;
   margin: 0 0 40px;
   table-layout: fixed;
   z-index: 2;
@@ -133,7 +133,7 @@
 // заголовки строк - розовый фильтр.. вот это вот всё..
 .table__rowheader {
   width: 153px;
-
+  height: 47px;
   text-align: left;
   padding: 0 0 0 15px;
   font-size: 14px;
@@ -186,19 +186,15 @@
 .table__pink--base {
   display: block;
   position: absolute;
-  left: 150px;
+  left: 330px;
   top: 18px;
 
   @media (min-width: $tablet) {
-    display: block;
-    position: absolute;
     left: 217px;
     top: 11px;
   }
 
   @media (min-width: $desktop) {
-    display: block;
-    position: absolute;
     left: 337px;
     top: 18px;
   }
@@ -211,8 +207,6 @@
   top: 18px;
 
   @media (min-width: $tablet) {
-    display: block;
-    position: absolute;
     left: 373px;
     top: 11px;
   }
@@ -230,8 +224,6 @@
   top: 18px;
 
   @media (min-width: $tablet) {
-    display: block;
-    position: absolute;
     left: 527px;
     top: 11px;
   }
@@ -245,12 +237,10 @@
 .table__smile--base {
   position: absolute;
   display: block;
-  left: 150px;
+  left: 330px;
   top: 18px;
 
   @media (min-width: $tablet) {
-    display: block;
-    position: absolute;
     left: 219px;
     top: 8px;
   }
@@ -268,10 +258,8 @@
   display: block;
 
   @media (min-width: $tablet) {
-    display: block;
     left: 373px;
     top: 11px;
-    position: absolute;
   }
 
   @media (min-width: $desktop) {
@@ -290,7 +278,6 @@
     display: block;
     right: 62px;
     top: 11px;
-    position: absolute;
   }
 
   @media (min-width: $desktop) {
@@ -302,7 +289,7 @@
 .table__comment--base {
   position: absolute;
   display: block;
-  left: 150px;
+  left: 330px;
   top: 18px;
 
   @media (min-width: $tablet) {
