@@ -208,11 +208,11 @@
 }
 
 
-.contacts__type--email:hover {
+.contacts__type:hover {
   color: $dark;
   text-decoration: underline;
 }
 
-.contacts__type--email:active {
+.contacts__type:active {
   color: $dark-op3;
 }
