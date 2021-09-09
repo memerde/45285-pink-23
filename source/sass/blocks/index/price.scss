@@ -15,8 +15,7 @@
   @media (min-width: $desktop) {
     min-height: 554px;
     padding: 177px 0 0;
-    background: linear-gradient(175.2deg, transparent 19%, $grey-bg 19.1%);
-    // clip-path: polygon(0 18.7%, 100% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(176deg, transparent 17.5%, $grey-bg 17.6%);
   }
 }
 
@@ -28,30 +27,3 @@
     overflow: visible;
   }
 }
-
-// .price__slider-dots {
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 0 126px;
-//   margin: 0 auto;
-
-//   @media (min-width: $tablet) {
-//     display: none;
-//   }
-// }
-
-// .price__slider-dots {
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 0 113px 0 109px;
-//   margin: 0 auto;
-//   align-items: center;
-
-//   @media (min-width: $tablet) {
-//     display: none;
-//   }
-
-//   @media (min-width: $desktop) {
-//     display: none;
-//   }
-// }

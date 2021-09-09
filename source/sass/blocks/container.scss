@@ -80,6 +80,10 @@
       position: absolute;
       top: 203px;
     }
+
+    &-tablet--nojs {
+      top: 569px;
+    }
   }
 
   @media (min-width: $desktop) {

@@ -1,0 +1,236 @@
+.modal {
+  width: 320px;
+  position: fixed;
+  text-align: center;
+  box-shadow: 0 7px 15px $black-op3;
+  background-color: $white;
+  border-radius: 5px;
+  // для выравнивания по центру
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--error {
+    padding: 38px 0 0;
+    min-height: 289px;
+  }
+
+  &--success {
+    padding: 38px 0 0;
+    min-height: 380px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 460px;
+    margin: 0 auto;
+
+    &--error {
+      min-height: 363px;
+      padding: 40px 60px 0;
+    }
+
+    &--success {
+      padding: 40px 0 0;
+      min-height: 432px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    min-height: 377px;
+  }
+}
+
+// ! MODAL__TITLE
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__title--error {
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.modal__title--success {
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+// ! MODAL__MESSAGE
+.modal__message {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+// .modal__message--error {
+//   margin: 0 0 41px;
+
+//   @media (min-width: $tablet) {
+//     font-size: 18px;
+//     margin: 0 0 33px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     margin: 0 0 60px;
+//   }
+// }
+
+// .modal__message--success {
+//   // margin: 0 0 37px;
+
+//   @media (min-width: $tablet) {
+//     font-size: 18px;
+//     margin: 0 0 33px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     margin: 0 0 154px;
+//   }
+// }
+
+// ! MODAL__BUTTON
+.modal__button {
+  background-color: $green;
+  color: $white;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  padding: 16px 0 17px;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $greenhover;
+  }
+
+  &:active {
+    background-color: $green;
+    color: $white-op3;
+  }
+
+  &:disabled {
+    background-color: $grey;
+    color: $white;
+    border-color: $grey;
+  }
+}
+
+// ! MODAL__BR
+.modal__br--error {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.modal__br--success {
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+// ! MODAL__WRAPPER
+.modal__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $desktop) {
+    padding: 0 215px;
+  }
+}
+
+.modal__wrapper--success {
+  @media (min-width: $tablet) {
+    padding: 0 77px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 154px 0;
+  }
+}
+
+.modal__button-section > .modal__wrapper--success {
+  @media (min-width: $tablet) {
+    padding: 0 80px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 160px;
+  }
+}
+
+.modal__button-section > .modal__wrapper--error {
+  @media (min-width: $desktop) {
+    padding: 0 240px;
+  }
+}
+
+// ! BUTTON-SECTION
+.modal__button-section {
+  margin: 0;
+  padding: 0;
+  background-color: $lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.modal__button-section--error {
+  min-height: 113px;
+  background-color: transparent;
+  justify-content: flex-start;
+
+  @media (min-width: $desktop) {
+    min-height: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background-color: $lightgrey;
+  }
+}
+
+.modal__button-section--success {
+  min-height: 163px;
+}
+
+.modal__hide {
+  display: none;
+}
+
+.modal__show {
+  display: block;
+}
