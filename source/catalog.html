@@ -11,10 +11,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 
-<body class="page__body catalog">
+<body class="page__body">
   <header class="page-header page-header--nojs page-header--no-opacity">
     <div class="page-header__container">
-      <div class="container container__nav">
+      <div class="container container--nav">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__svg" width="74" height="23">
             <use xlink:href="/img/sprite.svg#logo-mobile"></use>
@@ -54,8 +54,8 @@
     </div>
   </header>
 
-  <main>
-    <div class="catalog catalog__container">
+  <main class="catalog">
+    <div class="catalog__container">
       <h2 class="catalog__header">Фотографии пользователей </h2>
     </div>
 
@@ -67,7 +67,7 @@
 
     <section class="photo">
 
-      <div class="post-of-the-day">
+      <div class="post post-of-the-day">
         <div class="container container--oftheday">
           <a href="#" class="catalog__link">
             <picture>
@@ -79,7 +79,7 @@
           </a>
         </div>
         <div class="container">
-          <div class="post-of-the-day__wrapper post--oftheday">
+          <div class="post-of-the-day__wrapper">
             <h3 class="post__user">Анна <span class="post__time">(5 минут назад)</span></h3>
 
             <p class="post__text">
@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <div class="container container__layout">
+      <div class="container container--layout">
         <div class="post">
           <a href="#">
             <picture>
@@ -265,19 +265,19 @@
               <li class="editor__range editor__range--crop">
                 <span class="visually-hidden">Кадрирование</span>
                 <div class="editor__thumb editor__thumb--crop"></div>
-                <div class="editor__track--crop"></div>
+                <div class="editor__track editor__track--crop"></div>
               </li>
 
               <li class="editor__range editor__range--fill">
                 <span class="visually-hidden">Заливка</span>
                 <div class="editor__thumb editor__thumb--fill"></div>
-                <div class="editor__track--fill"></div>
+                <div class="editor__track editor__track--fill"></div>
               </li>
 
               <li class="editor__range editor__range--contrast">
                 <span class="visually-hidden">Контраст</span>
                 <div class="editor__thumb editor__thumb--contrast"></div>
-                <div class="editor__track--contrast"></div>
+                <div class="editor__track editor__track--contrast"></div>
               </li>
             </ul>
           </div>

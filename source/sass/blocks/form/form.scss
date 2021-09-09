@@ -806,11 +806,12 @@
   @media (min-width: $tablet) {
     display: block;
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 0;
+    right: 0;
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     background-color: $grey;
+    border-radius: 0 3px 3px 0;
   }
 }
