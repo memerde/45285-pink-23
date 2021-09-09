@@ -13,4 +13,5 @@ if (cta) {cta.classList.remove('container--cta-reset-tablet--nojs');}
 navToggle.addEventListener('click', function () {
   navigation.classList.toggle('navigation--toggle');
   header.classList.toggle('page-header--no-opacity');
+  header.classList.toggle('is-open');
 });

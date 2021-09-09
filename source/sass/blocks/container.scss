@@ -22,8 +22,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 20px;
-  align-items: baseline;
+  padding: 0 20px;
+  align-items: center;
   min-height: 66px;
 
   @media (min-width: $tablet) {
