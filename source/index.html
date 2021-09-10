@@ -7,8 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -64,9 +66,9 @@
           <h2 class="cta__heading cta__heading--top">Взгляните на жизнь иначе!</h2>
           <div class="cta__img-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="/img/hand-d.png">
-              <source media="(min-width: 660px)" srcset="/img/hand-t.png">
-              <img class="cta__img" src="/img/hand-m.png" alt="Рука с телефоном и приложением Пинк" width="320"
+              <source media="(min-width: 1200px)" srcset="/img/hand-d.png, /img/hand-d@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="/img/hand-t.png, /img/hand-t@2x.png 2x">
+              <img class="cta__img" src="/img/hand-m.png" srcset="/img/hand-m@2x.png 2x" alt="Рука с телефоном и приложением Пинк" width="320"
                 height="286">
             </picture>
           </div>
@@ -148,21 +150,21 @@
         </ul>
         <div class="features__images">
           <picture>
-            <source media="(min-width: 1200px)" srcset="/img/phone1-d.png">
+            <source media="(min-width: 1200px)" srcset="/img/phone1d.png, /img/phone1d@2x.png 2x">
             <img src="img/phone1.png" alt="Мобильный телефон с приложением
             Пинк" width="157" height="320" class="features__image features__image--one">
           </picture>
 
           <picture>
-            <source media="(min-width: 1200px)" srcset="/img/phone2d.png">
+            <source media="(min-width: 1200px)" srcset="/img/phone2d.png, /img/phone2d@2x.png 2x">
             <img src="img/phone2.png" alt="Мобильный телефон с приложением
           Пинк" width="157" height="320" class="features__image features__image--two">
           </picture>
 
           <picture>
-            <source media="(min-width: 1200px)" srcset="/img/phone3d.png">
+            <source media="(min-width: 1200px)" srcset="/img/phone3d.png, /img/phone3d@2x.png 2x">
             <source media="(min-width: 600px)" srcset="/img/phone-tablet.png">
-            <img src="img/phone3.png" alt="Мобильный телефон с приложением
+            <img src="img/phone3.png" srcset="/img/phone3@2x.png 2x" alt="Мобильный телефон с приложением
             Пинк" width="157" height="320" class="features__image features__image--three">
           </picture>
 

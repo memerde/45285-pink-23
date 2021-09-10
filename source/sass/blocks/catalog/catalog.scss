@@ -5,7 +5,7 @@
   position: relative;
   background-size: cover;
   padding-top: 75px;
-  background-image: url("/img/back-mobile.png");
+  background-image: url("/img/back-mobile.jpg");
   min-height: 237px;
   text-align: center;
 
@@ -13,25 +13,25 @@
     padding-top: 135px;
     min-height: 440px;
     margin: 0 auto 90px;
-    background-image: url("/img/back-tablet.png");
+    background-image: url("/img/back-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     padding: 169px 0 0;
     min-height: 394px;
-    background-image: url("/img/back-desktop.png");
+    background-image: url("/img/back-desktop.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-    background-image: url("/img/back-mobile2x.png");
+    background-image: url("/img/back-mobile@2x.jpg");
     background-position: center 0;
 
     @media (min-width: $tablet) {
-      background-image: url("/img/back-tablet2x.png");
+      background-image: url("/img/back-tablet@2x.jpg");
     }
 
     @media (min-width: $desktop) {
-      background-image: url("/img/back-desktop2x.png");
+      background-image: url("/img/back-desktop@2x.jpg");
     }
   }
 }
