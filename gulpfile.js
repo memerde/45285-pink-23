@@ -160,8 +160,7 @@ const build = gulp.series(
     scripts,
     sprite,
     createWebp,
-  ),
-  server
+  )
 );
 
 exports.build = build;
