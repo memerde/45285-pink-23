@@ -208,11 +208,11 @@
 }
 
 
-.contacts__type:hover {
+.contacts__type--active:hover {
   color: $dark;
   text-decoration: underline;
 }
 
-.contacts__type:active {
+.contacts__type--active:active {
   color: $dark-op3;
 }
