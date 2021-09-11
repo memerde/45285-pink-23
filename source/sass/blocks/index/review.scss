@@ -47,6 +47,7 @@
   display: none;
 
   @media (min-width: $desktop) {
+    display: block;
     position: absolute;
     background-color: transparent;
     border: none;

@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require('gulp-sass')(require('sass'));
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -100,6 +100,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.svg",
+    "source/manifest.webmanifest",
     "!source/img/icons/*.svg",
   ], {
     base: "source"
@@ -158,8 +159,9 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    createWebp
+    createWebp,
   ),
+  server
 );
 
 exports.build = build;
