@@ -119,12 +119,6 @@
   }
 }
 
-// .post--oftheday {
-//   @media (min-width: $tablet) {
-//     position: relative;
-//   }
-// }
-
 .post__hit--oftheday::before {
   @media (min-width: $tablet) {
     content: url("/img/heart.svg");

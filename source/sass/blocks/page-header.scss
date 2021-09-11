@@ -7,15 +7,7 @@
   background-color: $black-op3;
 }
 
-.page-header--no-opacity {
-  background-color: $dark;
-
-  @media (min-width: $desktop) {
-    background-color: $black-op3;
-  }
-}
-
-// ! NOJS HERE
+// ! NOJS
 .page-header--nojs {
   position: relative;
 
@@ -28,7 +20,15 @@
 .page-header__close--nojs {
   display: none;
 }
-// ! NOJS ^__^
+
+.page-header--no-opacity {
+  background-color: $dark;
+
+  @media (min-width: $desktop) {
+    background-color: $black-op3;
+  }
+}
+// ! end_nojs
 
 .page-header__container {
   @media (min-width: $desktop) {
@@ -43,26 +43,7 @@
   }
 }
 
-.page-header__close:hover path {
-  fill: $pink;
-}
-
-.page-header__close:active path {
-  fill: $pink-op3;
-}
-
-.page-header__close {
-  background-color: transparent;
-  border: none;
-  margin-right: -3px;
-
-  @media (min-width: $desktop) {
-    display: none;
-  }
-}
-
 // ! логотип и все его состояния
-
 .page-header__logo {
   display: inline;
   fill: $white;
@@ -111,5 +92,81 @@
 
 .page-header__logo:active svg {
   fill: $white;
+  opacity: 0.3;
+}
+
+// ! кнопка
+.page-header__close {
+  width: 50px;
+  height: 24px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet) {
+    top: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.page-header__close::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  background-color: $white;
+  height: 4px;
+  border-radius: 1px;
+  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  top: 0;
+  left: 0;
+}
+
+.page-header__close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: $white;
+}
+
+.page-header.is-open .page-header__close {
+  &::before {
+    top: 10px;
+    left: 6px;
+    width: 32px;
+    transform: rotate(45deg);
+    box-shadow: none;
+    position: absolute;
+  }
+
+  &::after {
+    top: 10px;
+    right: 12px;
+    width: 32px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:active::before,
+  &:active::after {
+    box-shadow: none;
+  }
+}
+
+.page-header__close:hover::after,
+.page-header__close:hover::before {
+  background-color: $pink;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+}
+
+.page-header__close:active::after,
+.page-header__close:active::before {
   opacity: 0.3;
 }

@@ -25,30 +25,30 @@
   position: relative;
   background-size: cover;
   padding-top: 74px;
-  background-image: url("/img/back-mobile.png");
+  background-image: url("/img/back-mobile.jpg");
 
   @media (min-width: $tablet) {
     padding-top: 135px;
     margin-bottom: 90px;
-    background-image: url("/img/back-tablet.png");
+    background-image: url("/img/back-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     padding-top: 128px;
     margin-bottom: 90px;
-    background-image: url("/img/back-desktop.png");
+    background-image: url("/img/back-desktop.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-    background-image: url("/img/back-mobile2x.png");
+    background-image: url("/img/back-mobile@2x.jpg");
     background-size: cover;
 
     @media (min-width: $tablet) {
-      background-image: url("/img/back-tablet2x.png");
+      background-image: url("/img/back-tablet@2x.jpg");
     }
 
     @media (min-width: $desktop) {
-      background-image: url("/img/back-desktop2x.png");
+      background-image: url("/img/back-desktop@2x.jpg");
     }
   }
 }
@@ -806,11 +806,12 @@
   @media (min-width: $tablet) {
     display: block;
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 0;
+    right: 0;
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     background-color: $grey;
+    border-radius: 0 3px 3px 0;
   }
 }
