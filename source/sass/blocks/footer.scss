@@ -16,17 +16,12 @@
       width: 660px;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
 
     @media (min-width: $desktop) {
-      margin: 0 auto;
       width: 1200px;
       padding: 32px 130px 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
     }
   }
 
@@ -39,6 +34,13 @@
   }
 
   &__form {
+    padding-top: 20px;
+
+    @media (min-width: $tablet) {
+      align-items: flex-start;
+      padding-top: 0;
+    }
+
     @media (min-width: $desktop) {
       padding-top: 0;
     }
@@ -68,7 +70,11 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    padding: 0;
+    padding: 2px 6px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 13px;
   }
 }
 
@@ -96,11 +102,17 @@
 
   svg {
     display: block;
+
+    @media (min-width: $tablet) {
+      padding-top: 4px;
+      width: 29px;
+      height: 36px;
+    }
   }
 
   @media (min-width: $tablet) {
     margin: 0 0 0 7px;
-    padding: 5px 0 0;
+    padding: 7px 0 0;
   }
 
   @media (min-width: $desktop) {
@@ -123,6 +135,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+    padding-top: 2px;
   }
 
   use:last-child {

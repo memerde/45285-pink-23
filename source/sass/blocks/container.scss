@@ -36,14 +36,6 @@
     margin: 0;
     padding: 0;
     min-height: 0;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding-left: 130px;
-    // padding-right: 130px;
-    // width: 1200px;
-    // margin: 0 auto;
-    // position: relative;
   }
 }
 
@@ -52,43 +44,6 @@
     padding: 0;
     margin: 0;
     width: 100%;
-  }
-}
-
-.container--cta {
-  position: relative;
-}
-
-.container--cta-reset {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
-  @media (min-width: $tablet) {
-    width: 660px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-    &-tablet {
-      width: 300px;
-      padding: 0;
-      position: absolute;
-      top: 203px;
-    }
-
-    &-tablet--nojs {
-      top: 569px;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 130px;
-
-    &-desktop {
-      top: 209px;
-    }
   }
 }
 
@@ -101,7 +56,6 @@
     grid-template-rows: min-content min-content;
     padding-bottom: 54px;
     column-gap: 45px;
-    // min-height: 400px;
   }
 
   @media (min-width: $desktop) {
@@ -111,20 +65,6 @@
     column-gap: 0;
   }
 }
-
-// .container--oftheday {
-//   width: 320px;
-//   padding: 0;
-//   position: relative;
-
-//   @media (min-width: $tablet) {
-//     width: 660px;
-//   }
-
-//   @media (min-width: $desktop) {
-//     width: 1200px;
-//   }
-// }
 
 .container--oftheday {
   width: 100%;
@@ -152,7 +92,6 @@
 
   @media (min-width: $desktop) {
     right: 130px;
-    // top: 54px;
     top: 55px;
   }
 }
@@ -170,7 +109,6 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
-    // width: 1200px;
     margin-bottom: 12px;
     row-gap: 54px;
   }

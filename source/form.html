@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
@@ -227,15 +230,18 @@
       </div>
 
       <div class="form__fieldset-emotions-container">
+
         <div class="container container--reset">
           <fieldset class="form__fieldset form__fieldset--emotions">
+
 
             <legend class="form__legend form__legend--emotions">
               Опишите свои эмоции
             </legend>
 
-            <textarea class="form__textarea" name="review" id="emotions"
-              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <label class="visually-hidden" for="emotions">Текстовое поле для комментария</label>
+            <textarea class="form__textarea" name="review" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
           </fieldset>
           <div class="form__button-container">
             <button class="form__button" type="submit">Отправить форму</button>

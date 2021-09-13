@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
@@ -61,30 +64,31 @@
 
   <main class="main">
     <section class="cta">
-      <div class="cta__bg">
+      <!-- <div class="cta__bg"> -->
+      <div class="cta__inner">
 
-        <div class="container container--cta">
 
-          <h2 class="cta__heading cta__heading--top">Взгляните на жизнь иначе!</h2>
-          <div class="cta__img-wrapper">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="/img/hand-d.png, /img/hand-d@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="/img/hand-t.png, /img/hand-t@2x.png 2x">
-              <img class="cta__img" src="/img/hand-m.png" srcset="/img/hand-m@2x.png 2x" alt="Рука с телефоном и приложением Пинк" width="320"
-                height="286">
-            </picture>
-          </div>
+        <div class="cta__img-container">
+
+          <h2 class="cta__title cta__title--top">Взгляните на жизнь иначе!</h2>
+          <!-- <div class="cta__img-wrapper"> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/hand-d.png, /img/hand-d@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="/img/hand-t.png, /img/hand-t@2x.png 2x">
+            <img class="cta__img" src="/img/hand-m.png" srcset="/img/hand-m@2x.png 2x"
+              alt="Рука с телефоном и приложением Пинк" width="320" height="286">
+          </picture>
+          <!-- </div> -->
         </div>
-      </div>
+        <!-- </div> -->
 
-      <div class="container container--cta-reset">
+        <div class="cta__download-container">
 
-        <div class="cta__container0">
+          <!-- <div class="cta__container0"> -->
 
-          <div
-            class="container container--cta-reset-tablet container--cta-reset-tablet--nojs container--cta-reset-desktop">
-
-            <h2 class="cta__heading cta__heading--bottom">Взгляните на жизнь иначе!</h2>
+          <!-- <div class="container container--cta-reset-tablet container--cta-reset-tablet--nojs container--cta-reset-desktop"> -->
+          <div class="cta__center">
+            <h2 class="cta__title cta__title--bottom">Взгляните на жизнь иначе!</h2>
             <a href="https://www.apple.com/ru/app-store/" class="cta__button button">
               Скачать приложение
             </a>
@@ -130,7 +134,7 @@
           <li class="features__item">
             <h3 class="features__item-heading">Поднимает настроение</h3>
             <p class="features__item-description">
-              Приложение позволит вам победить<br>&nbsp;осеннюю хандру и депрессию
+              Приложение позволит вам победить<br />&#32;осеннюю хандру и депрессию
               буквально в несколько кликов!
             </p>
 
@@ -139,11 +143,11 @@
             <h3 class="features__item-heading">Меняет мир вокруг</h3>
             <p class="features__item-description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы<br class="features__br">&nbsp;усилить эффект
+              чтобы<br class="features__br">&#32;усилить эффект
             </p>
           </li>
           <li class="features__item">
-            <h3 class="features__item-heading">Заводит<br>&nbsp;новых друзей</h3>
+            <h3 class="features__item-heading">Заводит<br />&#32;новых друзей</h3>
             <p class="features__item-description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите новых
@@ -182,10 +186,12 @@
           <img width="238" height="276" class="proof__img proof__img--desktop" src="img/timer.svg"
             alt="Таймер подтверждающий слова британских учёных с числом 24 на циферблате">
 
-          <h2 class="proof__header">Эффект<br>&nbsp;на 24 часа!</h2>
+          <h2 class="proof__header">Эффект<br>&#32;на 24 часа!</h2>
           <p class="proof__paragraph">
 
-            Британские ученые провели исследования<br class="proof__br-tablet">&nbsp;и доказали,<br class="proof__br-desktop">&nbsp;что положительный эффект<br class="proof__br-tablet">&nbsp;от использования приложения длится<br class="proof__br-tablet">&nbsp;целые сутки!
+            Британские ученые провели исследования<br class="proof__br-tablet">&#32;и доказали,<br
+              class="proof__br-desktop">&#32;что положительный эффект<br class="proof__br-tablet">&#32;от
+            использования приложения длится<br class="proof__br-tablet">&#32;целые сутки!
 
           </p>
           <a href="#" class="proof__link">Узнать больше об исследовании</a>
@@ -391,7 +397,7 @@
 
     <section class="contacts">
       <div class="container container--index">
-        <h2 class="contacts__heading">Остались вопросы?<br>&nbsp;Свяжитесь с нами!</h2>
+        <h2 class="contacts__heading">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <ul class="contacts__list" role="none">
           <li class="contacts__item">
             <p class="contacts__description">Звоните:</p>
@@ -403,14 +409,17 @@
           </li>
           <li class="contacts__item contacts__item--decorative">
             <p class="contacts__description">Приезжайте в гости:</p>
-            <p class="contacts__type">ул. Большая<br>&nbsp;Конюшенная, 19/8</p>
+            <p class="contacts__type">ул. Большая<br> Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627161821223!5m2!1sru!2sru"
-        width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy">
-      </iframe>
+      <div class="contacts__map-img">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627161821223!5m2!1sru!2sru"
+          width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
     </section>
   </main>
 

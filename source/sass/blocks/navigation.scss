@@ -23,7 +23,6 @@
   font-size: 18px;
   line-height: 32px;
   text-align: center;
-  z-index: 1;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
@@ -57,7 +56,7 @@
 
   @media (min-width: $desktop) {
     box-shadow: none;
-    padding: 0 0 10px;
+    padding: 0 0 4px;
     border-bottom: 2px solid transparent;
     margin: 0;
     width: max-content;
