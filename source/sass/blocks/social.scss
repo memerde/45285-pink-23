@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 1px 0 0;
+    margin: 3px 0 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -29,11 +31,15 @@
   }
 
   @media (min-width: $tablet) {
-    padding-right: 10px;
+    padding-right: 9px;
   }
 
   @media (min-width: $desktop) {
     padding-right: 6px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
